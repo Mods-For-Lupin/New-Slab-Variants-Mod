@@ -34,7 +34,7 @@ public class NewSlabVariantsFabric implements ModInitializer {
 
     NewSlabVariants.init();
 
-    DataResourceLoaderImpl.get(PackType.SERVER_DATA).registerReloadListener(NewSlabVariants.identifier(Constants.MOD_ID), new ResourceReloadListener());
+    DataResourceLoaderImpl.get(PackType.SERVER_DATA).registerReloadListener(NewSlabVariants.id(Constants.MOD_ID), new ResourceReloadListener());
   }
 
   public <T> void bind(Registry<T> registry, Consumer<BiConsumer<T, Identifier>> source) {
@@ -46,7 +46,7 @@ public class NewSlabVariantsFabric implements ModInitializer {
 
     @Override
     public String getName() {
-      return NewSlabVariants.identifier(Constants.MOD_ID).toString();
+      return NewSlabVariants.id(Constants.MOD_ID).toString();
     }
 
     @Override

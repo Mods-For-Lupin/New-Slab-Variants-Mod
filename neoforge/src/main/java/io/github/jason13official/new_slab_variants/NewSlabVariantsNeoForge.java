@@ -46,7 +46,7 @@ public class NewSlabVariantsNeoForge {
     EVENT_BUS.addListener((Consumer<FMLCommonSetupEvent>) event -> NewSlabVariants.init());
 
     NeoForge.EVENT_BUS.addListener((Consumer<AddServerReloadListenersEvent>) event -> {
-      event.addListener(NewSlabVariants.identifier(Constants.MOD_ID), new ResourceReloadListener());
+      event.addListener(NewSlabVariants.id(Constants.MOD_ID), new ResourceReloadListener());
     });
 
     modEventBus.addListener(NSVDatagenServer::init);
@@ -69,7 +69,7 @@ public class NewSlabVariantsNeoForge {
 
     @Override
     public String getName() {
-      return NewSlabVariants.identifier(Constants.MOD_ID).toString();
+      return NewSlabVariants.id(Constants.MOD_ID).toString();
     }
 
     @Override
