@@ -5,6 +5,6 @@ import net.neoforged.neoforge.data.event.GatherDataEvent.Client;
 public class NSVDatagenClient {
 
   public static void init(Client event) {
-
+    event.createProvider(NSVModelProvider::new);
   }
 }

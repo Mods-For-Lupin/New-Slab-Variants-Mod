@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "new_slab_variants:block/lodestone_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/lodestone"
+    },
+    "type=top": {
+      "model": "new_slab_variants:block/lodestone_slab_top"
+    }
+  }
+}
