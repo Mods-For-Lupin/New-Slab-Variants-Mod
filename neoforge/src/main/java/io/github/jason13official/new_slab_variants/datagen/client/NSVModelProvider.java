@@ -30,6 +30,9 @@ public class NSVModelProvider extends ModelProvider {
   private static final Material MAGMA_TEX = new Material(
       Identifier.fromNamespaceAndPath("minecraft", "block/magma")
   );
+  private static final Material SNOW_TEX = new Material(
+      Identifier.fromNamespaceAndPath("minecraft", "block/snow")
+  );
 
   public NSVModelProvider(PackOutput output) {
     super(output, "new_slab_variants");
@@ -349,7 +352,7 @@ public class NSVModelProvider extends ModelProvider {
     cubeSlab(bg, ModBlocks.ICE_SLAB,              Blocks.ICE);
     cubeSlab(bg, ModBlocks.PACKED_ICE_SLAB,       Blocks.PACKED_ICE);
     cubeSlab(bg, ModBlocks.BLUE_ICE_SLAB,         Blocks.BLUE_ICE);
-    cubeSlab(bg, ModBlocks.SNOW_BLOCK_SLAB,       Blocks.SNOW_BLOCK);
+    cubeSlab(bg, ModBlocks.SNOW_BLOCK_SLAB, SNOW_TEX, ModelLocationUtils.getModelLocation(Blocks.SNOW_BLOCK));
     cubeSlab(bg, ModBlocks.SPONGE_SLAB,           Blocks.SPONGE);
     cubeSlab(bg, ModBlocks.WET_SPONGE_SLAB,       Blocks.WET_SPONGE);
 
