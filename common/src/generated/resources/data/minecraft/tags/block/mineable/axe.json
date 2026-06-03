@@ -1,0 +1,15 @@
+{
+  "values": [
+    "new_slab_variants:bamboo_block_slab",
+    "new_slab_variants:stripped_bamboo_block_slab",
+    "new_slab_variants:crimson_hyphae_slab",
+    "new_slab_variants:stripped_crimson_hyphae_slab",
+    "new_slab_variants:warped_hyphae_slab",
+    "new_slab_variants:stripped_warped_hyphae_slab",
+    "new_slab_variants:brown_mushroom_block_slab",
+    "new_slab_variants:red_mushroom_block_slab",
+    "new_slab_variants:mushroom_stem_slab",
+    "new_slab_variants:note_block_slab",
+    "new_slab_variants:honeycomb_block_slab"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "values": [
+    "new_slab_variants:diamond_block_slab",
+    "new_slab_variants:emerald_block_slab",
+    "new_slab_variants:gold_block_slab",
+    "new_slab_variants:raw_gold_block_slab",
+    "new_slab_variants:gold_ore_slab",
+    "new_slab_variants:deepslate_gold_ore_slab",
+    "new_slab_variants:redstone_ore_slab",
+    "new_slab_variants:deepslate_redstone_ore_slab",
+    "new_slab_variants:diamond_ore_slab",
+    "new_slab_variants:deepslate_diamond_ore_slab",
+    "new_slab_variants:emerald_ore_slab",
+    "new_slab_variants:deepslate_emerald_ore_slab"
+  ]
+}

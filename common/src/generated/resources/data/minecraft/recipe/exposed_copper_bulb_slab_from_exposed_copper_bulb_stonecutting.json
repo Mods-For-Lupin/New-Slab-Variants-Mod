@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:exposed_copper_bulb",
+  "result": {
+    "count": 2,
+    "id": "new_slab_variants:exposed_copper_bulb_slab"
+  }
+}

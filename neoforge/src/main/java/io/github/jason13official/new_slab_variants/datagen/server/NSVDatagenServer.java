@@ -4,11 +4,11 @@ import java.util.List;
 import java.util.Set;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
-import net.neoforged.neoforge.data.event.GatherDataEvent.Server;
+import net.neoforged.neoforge.data.event.GatherDataEvent.Client;
 
 public class NSVDatagenServer {
 
-  public static void init(Server event) {
+  public static void init(Client event) {
     event.createProvider(NSVRecipeProvider::new);
 
     event.createProvider((output, registries) -> new LootTableProvider(

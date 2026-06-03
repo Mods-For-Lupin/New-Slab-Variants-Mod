@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "new_slab_variants:block/diamond_ore_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/diamond_ore"
+    },
+    "type=top": {
+      "model": "new_slab_variants:block/diamond_ore_slab_top"
+    }
+  }
+}

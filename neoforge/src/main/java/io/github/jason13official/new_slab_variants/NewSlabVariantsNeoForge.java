@@ -1,6 +1,5 @@
 package io.github.jason13official.new_slab_variants;
 
-import io.github.jason13official.new_slab_variants.datagen.server.NSVDatagenServer;
 import io.github.jason13official.new_slab_variants.impl.common.registry.ModBlocks;
 import io.github.jason13official.new_slab_variants.impl.common.registry.ModEntities;
 import io.github.jason13official.new_slab_variants.impl.common.registry.ModItems;
@@ -48,8 +47,6 @@ public class NewSlabVariantsNeoForge {
     NeoForge.EVENT_BUS.addListener((Consumer<AddServerReloadListenersEvent>) event -> {
       event.addListener(NewSlabVariants.id(Constants.MOD_ID), new ResourceReloadListener());
     });
-
-    modEventBus.addListener(NSVDatagenServer::init);
 
     if (FMLLoader.getCurrent().getDist() == Dist.CLIENT) {
       new NewSlabVariantsClientNeoForge(EVENT_BUS);

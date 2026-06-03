@@ -292,7 +292,7 @@ public class ModBlocks {
     LAPIS_ORE_SLAB             = slab("lapis_ore_slab",             Blocks.LAPIS_ORE,             consumer);
     NETHER_GOLD_ORE_SLAB       = slab("nether_gold_ore_slab",       Blocks.NETHER_GOLD_ORE,       consumer);
     NETHER_QUARTZ_ORE_SLAB     = slab("nether_quartz_ore_slab",     Blocks.NETHER_QUARTZ_ORE,     consumer);
-    REDSTONE_ORE_SLAB          = slab("redstone_ore_slab",          Blocks.REDSTONE_ORE,          consumer);
+    REDSTONE_ORE_SLAB          = litSlab("redstone_ore_slab",          Blocks.REDSTONE_ORE,          consumer);
     DEEPSLATE_COAL_ORE_SLAB    = slab("deepslate_coal_ore_slab",    Blocks.DEEPSLATE_COAL_ORE,    consumer);
     DEEPSLATE_COPPER_ORE_SLAB  = slab("deepslate_copper_ore_slab",  Blocks.DEEPSLATE_COPPER_ORE,  consumer);
     DEEPSLATE_DIAMOND_ORE_SLAB = slab("deepslate_diamond_ore_slab", Blocks.DEEPSLATE_DIAMOND_ORE, consumer);
@@ -300,7 +300,7 @@ public class ModBlocks {
     DEEPSLATE_GOLD_ORE_SLAB    = slab("deepslate_gold_ore_slab",    Blocks.DEEPSLATE_GOLD_ORE,    consumer);
     DEEPSLATE_IRON_ORE_SLAB    = slab("deepslate_iron_ore_slab",    Blocks.DEEPSLATE_IRON_ORE,    consumer);
     DEEPSLATE_LAPIS_ORE_SLAB   = slab("deepslate_lapis_ore_slab",   Blocks.DEEPSLATE_LAPIS_ORE,   consumer);
-    DEEPSLATE_REDSTONE_ORE_SLAB = slab("deepslate_redstone_ore_slab", Blocks.DEEPSLATE_REDSTONE_ORE, consumer);
+    DEEPSLATE_REDSTONE_ORE_SLAB = litSlab("deepslate_redstone_ore_slab", Blocks.DEEPSLATE_REDSTONE_ORE, consumer);
 
     // Stone/underground/nether
     BASALT_SLAB            = slab("basalt_slab",            Blocks.BASALT,            consumer);
@@ -369,7 +369,7 @@ public class ModBlocks {
 
     // Misc
     REDSTONE_BLOCK_SLAB    = slab("redstone_block_slab",    Blocks.REDSTONE_BLOCK,    consumer);
-    REDSTONE_LAMP_SLAB     = slab("redstone_lamp_slab",     Blocks.REDSTONE_LAMP,     consumer);
+    REDSTONE_LAMP_SLAB     = litSlab("redstone_lamp_slab",     Blocks.REDSTONE_LAMP,     consumer);
     HONEYCOMB_BLOCK_SLAB   = slab("honeycomb_block_slab",   Blocks.HONEYCOMB_BLOCK,   consumer);
     PACKED_MUD_SLAB        = slab("packed_mud_slab",        Blocks.PACKED_MUD,        consumer);
     CRYING_OBSIDIAN_SLAB   = slab("crying_obsidian_slab",   Blocks.CRYING_OBSIDIAN,   consumer);
@@ -406,10 +406,10 @@ public class ModBlocks {
     EXPOSED_CHISELED_COPPER_SLAB  = slab("exposed_chiseled_copper_slab",  Blocks.EXPOSED_CHISELED_COPPER,  consumer);
     OXIDIZED_CHISELED_COPPER_SLAB = slab("oxidized_chiseled_copper_slab", Blocks.OXIDIZED_CHISELED_COPPER, consumer);
     WEATHERED_CHISELED_COPPER_SLAB = slab("weathered_chiseled_copper_slab", Blocks.WEATHERED_CHISELED_COPPER, consumer);
-    COPPER_BULB_SLAB              = slab("copper_bulb_slab",              Blocks.COPPER_BULB,              consumer);
-    EXPOSED_COPPER_BULB_SLAB      = slab("exposed_copper_bulb_slab",      Blocks.EXPOSED_COPPER_BULB,      consumer);
-    OXIDIZED_COPPER_BULB_SLAB     = slab("oxidized_copper_bulb_slab",     Blocks.OXIDIZED_COPPER_BULB,     consumer);
-    WEATHERED_COPPER_BULB_SLAB    = slab("weathered_copper_bulb_slab",    Blocks.WEATHERED_COPPER_BULB,    consumer);
+    COPPER_BULB_SLAB              = copperBulbSlab("copper_bulb_slab",              Blocks.COPPER_BULB,              MapColor.METAL,       consumer);
+    EXPOSED_COPPER_BULB_SLAB      = copperBulbSlab("exposed_copper_bulb_slab",      Blocks.EXPOSED_COPPER_BULB,      MapColor.METAL,       consumer);
+    OXIDIZED_COPPER_BULB_SLAB     = copperBulbSlab("oxidized_copper_bulb_slab",     Blocks.OXIDIZED_COPPER_BULB,     MapColor.WARPED_STEM, consumer);
+    WEATHERED_COPPER_BULB_SLAB    = copperBulbSlab("weathered_copper_bulb_slab",    Blocks.WEATHERED_COPPER_BULB,    MapColor.COLOR_GREEN, consumer);
 
     // Copper grates
     COPPER_GRATE_SLAB           = slab("copper_grate_slab",           Blocks.COPPER_GRATE,           consumer);
@@ -524,6 +524,20 @@ public class ModBlocks {
 
   private static Block slab(String name, Properties props, BiConsumer<Block, Identifier> consumer) {
     return construct(name, SlabBlock::new, props, consumer);
+  }
+
+  // blocks whose Properties.lightLevel is a lambda that reads LIT — override with constant so
+  // our slab (which has no lit property) doesn't crash during NeoForge postRegisterEvents
+  @SuppressWarnings("deprecation")
+  private static Block litSlab(String name, Block source, BiConsumer<Block, Identifier> consumer) {
+    return construct(name, SlabBlock::new, BlockBehaviour.Properties.ofLegacyCopy(source).lightLevel(state -> 0), consumer);
+  }
+
+  // copper_bulb variants have BOTH a state-dependent mapColor (reads LIT) and lightLevel (reads LIT)
+  @SuppressWarnings("deprecation")
+  private static Block copperBulbSlab(String name, Block source, MapColor unlitColor, BiConsumer<Block, Identifier> consumer) {
+    return construct(name, SlabBlock::new,
+        BlockBehaviour.Properties.ofLegacyCopy(source).mapColor(unlitColor).lightLevel(state -> 0), consumer);
   }
 
   // bamboo_block and stripped_bamboo_block use logProperties() whose mapColor lambda reads

@@ -1,0 +1,33 @@
+{
+  "values": [
+    "new_slab_variants:iron_block_slab",
+    "new_slab_variants:raw_iron_block_slab",
+    "new_slab_variants:lapis_block_slab",
+    "new_slab_variants:raw_copper_block_slab",
+    "new_slab_variants:copper_grate_slab",
+    "new_slab_variants:exposed_copper_grate_slab",
+    "new_slab_variants:weathered_copper_grate_slab",
+    "new_slab_variants:oxidized_copper_grate_slab",
+    "new_slab_variants:iron_ore_slab",
+    "new_slab_variants:deepslate_iron_ore_slab",
+    "new_slab_variants:copper_ore_slab",
+    "new_slab_variants:deepslate_copper_ore_slab",
+    "new_slab_variants:lapis_ore_slab",
+    "new_slab_variants:deepslate_lapis_ore_slab",
+    "new_slab_variants:copper_block_slab",
+    "new_slab_variants:exposed_copper_slab",
+    "new_slab_variants:oxidized_copper_slab",
+    "new_slab_variants:weathered_copper_slab",
+    "new_slab_variants:chiseled_copper_slab",
+    "new_slab_variants:exposed_chiseled_copper_slab",
+    "new_slab_variants:oxidized_chiseled_copper_slab",
+    "new_slab_variants:weathered_chiseled_copper_slab",
+    "new_slab_variants:copper_bulb_slab",
+    "new_slab_variants:exposed_copper_bulb_slab",
+    "new_slab_variants:oxidized_copper_bulb_slab",
+    "new_slab_variants:weathered_copper_bulb_slab",
+    "new_slab_variants:amethyst_block_slab",
+    "new_slab_variants:budding_amethyst_slab",
+    "new_slab_variants:sculk_slab"
+  ]
+}
