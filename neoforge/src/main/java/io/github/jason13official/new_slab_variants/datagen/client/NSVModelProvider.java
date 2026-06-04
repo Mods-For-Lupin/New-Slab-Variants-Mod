@@ -807,9 +807,23 @@ public class NSVModelProvider extends ModelProvider {
   }
 
   private static void nyliumSlab(BlockModelGenerators bg, Block slab, Material top, Material side, Block full) {
-    slabState(bg, slab,
-        new TextureMapping().put(TextureSlot.TOP, top).put(TextureSlot.SIDE, side).put(TextureSlot.BOTTOM, tex(Blocks.NETHERRACK)),
-        ModelLocationUtils.getModelLocation(full));
+//    slabState(bg, slab,
+//        new TextureMapping().put(TextureSlot.TOP, top).put(TextureSlot.SIDE, side).put(TextureSlot.BOTTOM, tex(Blocks.NETHERRACK)),
+//        ModelLocationUtils.getModelLocation(full));
+
+    var mapping = new TextureMapping().put(TextureSlot.TOP, top).put(TextureSlot.SIDE, side).put(TextureSlot.BOTTOM, tex(Blocks.NETHERRACK));
+    var fullModel = ModelLocationUtils.getModelLocation(full);
+
+    Identifier bottom = LOWERED_SLAB_BOTTOM.create(slab, mapping, bg.modelOutput);
+    Identifier topId    = ModelTemplates.SLAB_TOP.create(slab, mapping, bg.modelOutput);
+    bg.blockStateOutput.accept(
+        MultiVariantGenerator.dispatch(slab)
+            .with(PropertyDispatch.initial(BlockStateProperties.SLAB_TYPE)
+                .select(SlabType.BOTTOM, mv(bottom))
+                .select(SlabType.TOP,    mv(topId))
+                .select(SlabType.DOUBLE, mv(fullModel)))
+    );
+    bg.registerSimpleItemModel(slab, bottom);
   }
 
   private static void grassSlab(BlockModelGenerators bg, Block slab, Block full) {

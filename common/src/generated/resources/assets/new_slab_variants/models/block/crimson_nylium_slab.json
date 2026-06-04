@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/slab",
+  "parent": "new_slab_variants:block/template_lowered_slab",
   "textures": {
     "bottom": "minecraft:block/netherrack",
     "side": "minecraft:block/crimson_nylium_side",
