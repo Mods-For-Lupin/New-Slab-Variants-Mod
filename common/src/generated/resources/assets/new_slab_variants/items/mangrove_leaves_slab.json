@@ -1,6 +1,12 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "new_slab_variants:block/mangrove_leaves_slab"
+    "model": "new_slab_variants:block/mangrove_leaves_slab",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -7158200
+      }
+    ]
   }
 }

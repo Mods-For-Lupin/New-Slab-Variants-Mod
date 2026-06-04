@@ -5,6 +5,7 @@ import java.util.List;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockColorRegistry;
 import net.minecraft.client.color.block.BlockTintSource;
+import net.minecraft.client.color.block.BlockTintSources;
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.block.BlockAndTintGetter;
 import net.minecraft.core.BlockPos;
@@ -32,5 +33,16 @@ public class NewSlabVariantsClientFabric implements ClientModInitializer {
           }
         }),
         ModBlocks.GRASS_BLOCK_SLAB);
+
+    BlockColorRegistry.register(List.of(BlockTintSources.constant(-10380959)), ModBlocks.SPRUCE_LEAVES_SLAB);
+    BlockColorRegistry.register(List.of(BlockTintSources.constant(-8345771)), ModBlocks.BIRCH_LEAVES_SLAB);
+    BlockColorRegistry.register(
+        List.of(BlockTintSources.foliage()),
+        ModBlocks.OAK_LEAVES_SLAB,
+        ModBlocks.JUNGLE_LEAVES_SLAB,
+        ModBlocks.ACACIA_LEAVES_SLAB,
+        ModBlocks.DARK_OAK_LEAVES_SLAB,
+        ModBlocks.MANGROVE_LEAVES_SLAB
+    );
   }
 }

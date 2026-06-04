@@ -1,6 +1,12 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "new_slab_variants:block/jungle_leaves_slab"
+    "model": "new_slab_variants:block/jungle_leaves_slab",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -12012264
+      }
+    ]
   }
 }

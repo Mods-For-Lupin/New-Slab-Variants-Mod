@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/slab",
+  "parent": "new_slab_variants:block/template_leaves_slab",
   "textures": {
     "bottom": "minecraft:block/mangrove_leaves",
     "side": "minecraft:block/mangrove_leaves",

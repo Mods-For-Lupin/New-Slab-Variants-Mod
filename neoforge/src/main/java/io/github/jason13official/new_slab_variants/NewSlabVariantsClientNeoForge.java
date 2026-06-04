@@ -5,11 +5,13 @@ import io.github.jason13official.new_slab_variants.impl.common.registry.ModBlock
 import java.util.List;
 import java.util.function.Consumer;
 import net.minecraft.client.color.block.BlockTintSource;
+import net.minecraft.client.color.block.BlockTintSources;
 import net.minecraft.client.renderer.BiomeColors;
 // import net.minecraft.world.level.BlockAndTintGetter; // wrong import
 import net.minecraft.client.renderer.block.BlockAndTintGetter;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.GrassColor;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
@@ -25,8 +27,8 @@ public class NewSlabVariantsClientNeoForge {
     modEventBus.addListener(NewSlabVariantsClientNeoForge::registerBlockColorHandlers);
   }
 
-  private static void registerBlockColorHandlers(RegisterColorHandlersEvent.BlockTintSources event) {
-    event.register(
+  private static void registerBlockColorHandlers(RegisterColorHandlersEvent.BlockTintSources colors) {
+    colors.register(
         List.of(new BlockTintSource() {
           @Override
           public int color(BlockState state) {
@@ -39,6 +41,17 @@ public class NewSlabVariantsClientNeoForge {
           }
         }),
         ModBlocks.GRASS_BLOCK_SLAB
+    );
+
+    colors.register(List.of(BlockTintSources.constant(-10380959)), ModBlocks.SPRUCE_LEAVES_SLAB);
+    colors.register(List.of(BlockTintSources.constant(-8345771)), ModBlocks.BIRCH_LEAVES_SLAB);
+    colors.register(
+        List.of(BlockTintSources.foliage()),
+        ModBlocks.OAK_LEAVES_SLAB,
+        ModBlocks.JUNGLE_LEAVES_SLAB,
+        ModBlocks.ACACIA_LEAVES_SLAB,
+        ModBlocks.DARK_OAK_LEAVES_SLAB,
+        ModBlocks.MANGROVE_LEAVES_SLAB
     );
   }
 

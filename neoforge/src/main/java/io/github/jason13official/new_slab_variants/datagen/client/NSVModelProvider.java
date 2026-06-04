@@ -7,6 +7,7 @@ import net.minecraft.client.color.item.GrassColorSource;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
+import net.minecraft.client.data.models.model.ItemModelUtils;
 import net.minecraft.core.Holder;
 import net.minecraft.world.item.Item;
 import net.minecraft.client.data.models.MultiVariant;
@@ -56,6 +57,17 @@ public class NSVModelProvider extends ModelProvider {
   );
   private static final ModelTemplate GRASS_SLAB_TOP = new ModelTemplate(
       Optional.of(Identifier.fromNamespaceAndPath("new_slab_variants", "block/template_grass_slab_top")),
+      Optional.of("_top"),
+      TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE
+  );
+
+  private static final ModelTemplate LEAVES_SLAB_BOTTOM = new ModelTemplate(
+      Optional.of(Identifier.fromNamespaceAndPath("new_slab_variants", "block/template_leaves_slab")),
+      Optional.empty(),
+      TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE
+  );
+  private static final ModelTemplate LEAVES_SLAB_TOP = new ModelTemplate(
+      Optional.of(Identifier.fromNamespaceAndPath("new_slab_variants", "block/template_leaves_slab_top")),
       Optional.of("_top"),
       TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE
   );
@@ -710,14 +722,14 @@ public class NSVModelProvider extends ModelProvider {
     cubeSlab(bg, ModBlocks.STRIPPED_MANGROVE_WOOD_SLAB, tex(Blocks.STRIPPED_MANGROVE_LOG), ModelLocationUtils.getModelLocation(Blocks.STRIPPED_MANGROVE_WOOD));
 
     // Leaves — cube_all
-    cubeSlab(bg, ModBlocks.OAK_LEAVES_SLAB,      Blocks.OAK_LEAVES);
-    cubeSlab(bg, ModBlocks.BIRCH_LEAVES_SLAB,    Blocks.BIRCH_LEAVES);
-    cubeSlab(bg, ModBlocks.SPRUCE_LEAVES_SLAB,   Blocks.SPRUCE_LEAVES);
-    cubeSlab(bg, ModBlocks.JUNGLE_LEAVES_SLAB,   Blocks.JUNGLE_LEAVES);
-    cubeSlab(bg, ModBlocks.ACACIA_LEAVES_SLAB,   Blocks.ACACIA_LEAVES);
-    cubeSlab(bg, ModBlocks.DARK_OAK_LEAVES_SLAB, Blocks.DARK_OAK_LEAVES);
+    leavesSlab(bg, ModBlocks.OAK_LEAVES_SLAB,      Blocks.OAK_LEAVES, -12012264);
+    leavesSlab(bg, ModBlocks.BIRCH_LEAVES_SLAB,    Blocks.BIRCH_LEAVES, -8345771);
+    leavesSlab(bg, ModBlocks.SPRUCE_LEAVES_SLAB,   Blocks.SPRUCE_LEAVES, -10380959);
+    leavesSlab(bg, ModBlocks.JUNGLE_LEAVES_SLAB,   Blocks.JUNGLE_LEAVES, -12012264);
+    leavesSlab(bg, ModBlocks.ACACIA_LEAVES_SLAB,   Blocks.ACACIA_LEAVES, -12012264);
+    leavesSlab(bg, ModBlocks.DARK_OAK_LEAVES_SLAB, Blocks.DARK_OAK_LEAVES, -12012264);
     cubeSlab(bg, ModBlocks.CHERRY_LEAVES_SLAB,   Blocks.CHERRY_LEAVES);
-    cubeSlab(bg, ModBlocks.MANGROVE_LEAVES_SLAB, Blocks.MANGROVE_LEAVES);
+    leavesSlab(bg, ModBlocks.MANGROVE_LEAVES_SLAB, Blocks.MANGROVE_LEAVES, -7158200);
 
     // Misc
     columnSlab(bg, ModBlocks.ANCIENT_DEBRIS_SLAB,      tex(Blocks.ANCIENT_DEBRIS, "_side"), tex(Blocks.ANCIENT_DEBRIS, "_top"), Blocks.ANCIENT_DEBRIS);
@@ -841,5 +853,23 @@ public class NSVModelProvider extends ModelProvider {
                 .select(SlabType.DOUBLE, mv(ModelLocationUtils.getModelLocation(full))))
     );
     bg.registerSimpleTintedItemModel(slab, bottom, new GrassColorSource());
+  }
+
+  private static void leavesSlab(BlockModelGenerators bg, Block slab, Block full, int tintColor) {
+    TextureMapping mapping = new TextureMapping()
+        .put(TextureSlot.BOTTOM, tex(full))
+        .put(TextureSlot.TOP,    tex(full))
+        .put(TextureSlot.SIDE,   tex(full));
+    Identifier bottom = LEAVES_SLAB_BOTTOM.create(slab, mapping, bg.modelOutput);
+    Identifier top    = LEAVES_SLAB_TOP.create(slab, mapping, bg.modelOutput);
+
+    bg.blockStateOutput.accept(
+        MultiVariantGenerator.dispatch(slab)
+            .with(PropertyDispatch.initial(BlockStateProperties.SLAB_TYPE)
+                .select(SlabType.BOTTOM, mv(bottom))
+                .select(SlabType.TOP,    mv(top))
+                .select(SlabType.DOUBLE, mv(ModelLocationUtils.getModelLocation(full))))
+    );
+    bg.registerSimpleTintedItemModel(slab, bottom, ItemModelUtils.constantTint(tintColor));
   }
 }
