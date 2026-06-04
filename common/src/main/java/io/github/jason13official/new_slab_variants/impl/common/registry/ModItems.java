@@ -265,6 +265,109 @@ public class ModItems {
   public static Item RED_TERRACOTTA_SLAB;
   public static Item BLACK_TERRACOTTA_SLAB;
 
+  // ── Glazed terracotta ─────────────────────────────────────────────────────
+  public static Item BLACK_GLAZED_TERRACOTTA_SLAB;
+  public static Item BLUE_GLAZED_TERRACOTTA_SLAB;
+  public static Item BROWN_GLAZED_TERRACOTTA_SLAB;
+  public static Item CYAN_GLAZED_TERRACOTTA_SLAB;
+  public static Item GRAY_GLAZED_TERRACOTTA_SLAB;
+  public static Item GREEN_GLAZED_TERRACOTTA_SLAB;
+  public static Item LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB;
+  public static Item LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB;
+  public static Item LIME_GLAZED_TERRACOTTA_SLAB;
+  public static Item MAGENTA_GLAZED_TERRACOTTA_SLAB;
+  public static Item ORANGE_GLAZED_TERRACOTTA_SLAB;
+  public static Item PINK_GLAZED_TERRACOTTA_SLAB;
+  public static Item PURPLE_GLAZED_TERRACOTTA_SLAB;
+  public static Item RED_GLAZED_TERRACOTTA_SLAB;
+  public static Item WHITE_GLAZED_TERRACOTTA_SLAB;
+  public static Item YELLOW_GLAZED_TERRACOTTA_SLAB;
+
+  // ── Infested blocks ───────────────────────────────────────────────────────
+  public static Item INFESTED_STONE_SLAB;
+  public static Item INFESTED_COBBLESTONE_SLAB;
+  public static Item INFESTED_STONE_BRICKS_SLAB;
+  public static Item INFESTED_CRACKED_STONE_BRICKS_SLAB;
+  public static Item INFESTED_CHISELED_STONE_BRICKS_SLAB;
+  public static Item INFESTED_MOSSY_STONE_BRICKS_SLAB;
+  public static Item INFESTED_DEEPSLATE_SLAB;
+
+  // ── Waxed copper ─────────────────────────────────────────────────────────
+  public static Item WAXED_COPPER_BLOCK_SLAB;
+  public static Item WAXED_EXPOSED_COPPER_SLAB;
+  public static Item WAXED_OXIDIZED_COPPER_SLAB;
+  public static Item WAXED_WEATHERED_COPPER_SLAB;
+
+  // ── Froglights ────────────────────────────────────────────────────────────
+  public static Item OCHRE_FROGLIGHT_SLAB;
+  public static Item PEARLESCENT_FROGLIGHT_SLAB;
+  public static Item VERDANT_FROGLIGHT_SLAB;
+
+  // ── Nylium ────────────────────────────────────────────────────────────────
+  public static Item CRIMSON_NYLIUM_SLAB;
+  public static Item WARPED_NYLIUM_SLAB;
+
+  // ── Wood logs / wood / leaves ─────────────────────────────────────────────
+  public static Item OAK_LOG_SLAB;
+  public static Item OAK_WOOD_SLAB;
+  public static Item STRIPPED_OAK_LOG_SLAB;
+  public static Item STRIPPED_OAK_WOOD_SLAB;
+  public static Item OAK_LEAVES_SLAB;
+  public static Item BIRCH_LOG_SLAB;
+  public static Item BIRCH_WOOD_SLAB;
+  public static Item STRIPPED_BIRCH_LOG_SLAB;
+  public static Item STRIPPED_BIRCH_WOOD_SLAB;
+  public static Item BIRCH_LEAVES_SLAB;
+  public static Item SPRUCE_LOG_SLAB;
+  public static Item SPRUCE_WOOD_SLAB;
+  public static Item STRIPPED_SPRUCE_LOG_SLAB;
+  public static Item STRIPPED_SPRUCE_WOOD_SLAB;
+  public static Item SPRUCE_LEAVES_SLAB;
+  public static Item JUNGLE_LOG_SLAB;
+  public static Item JUNGLE_WOOD_SLAB;
+  public static Item STRIPPED_JUNGLE_LOG_SLAB;
+  public static Item STRIPPED_JUNGLE_WOOD_SLAB;
+  public static Item JUNGLE_LEAVES_SLAB;
+  public static Item ACACIA_LOG_SLAB;
+  public static Item ACACIA_WOOD_SLAB;
+  public static Item STRIPPED_ACACIA_LOG_SLAB;
+  public static Item STRIPPED_ACACIA_WOOD_SLAB;
+  public static Item ACACIA_LEAVES_SLAB;
+  public static Item DARK_OAK_LOG_SLAB;
+  public static Item DARK_OAK_WOOD_SLAB;
+  public static Item STRIPPED_DARK_OAK_LOG_SLAB;
+  public static Item STRIPPED_DARK_OAK_WOOD_SLAB;
+  public static Item DARK_OAK_LEAVES_SLAB;
+  public static Item CHERRY_LOG_SLAB;
+  public static Item CHERRY_WOOD_SLAB;
+  public static Item STRIPPED_CHERRY_LOG_SLAB;
+  public static Item STRIPPED_CHERRY_WOOD_SLAB;
+  public static Item CHERRY_LEAVES_SLAB;
+  public static Item MANGROVE_LOG_SLAB;
+  public static Item MANGROVE_WOOD_SLAB;
+  public static Item STRIPPED_MANGROVE_LOG_SLAB;
+  public static Item STRIPPED_MANGROVE_WOOD_SLAB;
+  public static Item MANGROVE_LEAVES_SLAB;
+
+  // ── Misc ─────────────────────────────────────────────────────────────────
+  public static Item ANCIENT_DEBRIS_SLAB;
+  public static Item BOOKSHELF_SLAB;
+  public static Item CHISELED_QUARTZ_BLOCK_SLAB;
+  public static Item CHISELED_RED_SANDSTONE_SLAB;
+  public static Item CHISELED_SANDSTONE_SLAB;
+  public static Item DEEPSLATE_SLAB;
+  public static Item DRIED_KELP_BLOCK_SLAB;
+  public static Item HAY_BLOCK_SLAB;
+  public static Item HONEY_BLOCK_SLAB;
+  public static Item LADDER_SLAB;
+  public static Item MELON_SLAB;
+  public static Item PUMPKIN_SLAB;
+  public static Item SCAFFOLDING_SLAB;
+  public static Item SCULK_CATALYST_SLAB;
+  public static Item SLIME_BLOCK_SLAB;
+  public static Item TNT_SLAB;
+  public static Item TUFF_SLAB;
+
   public static void register(BiConsumer<Item, Identifier> consumer) {
     // Mineral/gem blocks
     COAL_BLOCK_SLAB        = blockItem("coal_block_slab",        ModBlocks.COAL_BLOCK_SLAB,        consumer);
@@ -517,6 +620,109 @@ public class ModItems {
     GREEN_TERRACOTTA_SLAB      = blockItem("green_terracotta_slab",      ModBlocks.GREEN_TERRACOTTA_SLAB,      consumer);
     RED_TERRACOTTA_SLAB        = blockItem("red_terracotta_slab",        ModBlocks.RED_TERRACOTTA_SLAB,        consumer);
     BLACK_TERRACOTTA_SLAB      = blockItem("black_terracotta_slab",      ModBlocks.BLACK_TERRACOTTA_SLAB,      consumer);
+
+    // Glazed terracotta
+    BLACK_GLAZED_TERRACOTTA_SLAB      = blockItem("black_glazed_terracotta_slab",      ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB,      consumer);
+    BLUE_GLAZED_TERRACOTTA_SLAB       = blockItem("blue_glazed_terracotta_slab",       ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB,       consumer);
+    BROWN_GLAZED_TERRACOTTA_SLAB      = blockItem("brown_glazed_terracotta_slab",      ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB,      consumer);
+    CYAN_GLAZED_TERRACOTTA_SLAB       = blockItem("cyan_glazed_terracotta_slab",       ModBlocks.CYAN_GLAZED_TERRACOTTA_SLAB,       consumer);
+    GRAY_GLAZED_TERRACOTTA_SLAB       = blockItem("gray_glazed_terracotta_slab",       ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB,       consumer);
+    GREEN_GLAZED_TERRACOTTA_SLAB      = blockItem("green_glazed_terracotta_slab",      ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB,      consumer);
+    LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB = blockItem("light_blue_glazed_terracotta_slab", ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB, consumer);
+    LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB = blockItem("light_gray_glazed_terracotta_slab", ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB, consumer);
+    LIME_GLAZED_TERRACOTTA_SLAB       = blockItem("lime_glazed_terracotta_slab",       ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB,       consumer);
+    MAGENTA_GLAZED_TERRACOTTA_SLAB    = blockItem("magenta_glazed_terracotta_slab",    ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB,    consumer);
+    ORANGE_GLAZED_TERRACOTTA_SLAB     = blockItem("orange_glazed_terracotta_slab",     ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB,     consumer);
+    PINK_GLAZED_TERRACOTTA_SLAB       = blockItem("pink_glazed_terracotta_slab",       ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB,       consumer);
+    PURPLE_GLAZED_TERRACOTTA_SLAB     = blockItem("purple_glazed_terracotta_slab",     ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB,     consumer);
+    RED_GLAZED_TERRACOTTA_SLAB        = blockItem("red_glazed_terracotta_slab",        ModBlocks.RED_GLAZED_TERRACOTTA_SLAB,        consumer);
+    WHITE_GLAZED_TERRACOTTA_SLAB      = blockItem("white_glazed_terracotta_slab",      ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB,      consumer);
+    YELLOW_GLAZED_TERRACOTTA_SLAB     = blockItem("yellow_glazed_terracotta_slab",     ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB,     consumer);
+
+    // Infested blocks
+    INFESTED_STONE_SLAB                = blockItem("infested_stone_slab",                ModBlocks.INFESTED_STONE_SLAB,                consumer);
+    INFESTED_COBBLESTONE_SLAB          = blockItem("infested_cobblestone_slab",          ModBlocks.INFESTED_COBBLESTONE_SLAB,          consumer);
+    INFESTED_STONE_BRICKS_SLAB         = blockItem("infested_stone_bricks_slab",         ModBlocks.INFESTED_STONE_BRICKS_SLAB,         consumer);
+    INFESTED_CRACKED_STONE_BRICKS_SLAB = blockItem("infested_cracked_stone_bricks_slab", ModBlocks.INFESTED_CRACKED_STONE_BRICKS_SLAB, consumer);
+    INFESTED_CHISELED_STONE_BRICKS_SLAB = blockItem("infested_chiseled_stone_bricks_slab", ModBlocks.INFESTED_CHISELED_STONE_BRICKS_SLAB, consumer);
+    INFESTED_MOSSY_STONE_BRICKS_SLAB   = blockItem("infested_mossy_stone_bricks_slab",   ModBlocks.INFESTED_MOSSY_STONE_BRICKS_SLAB,   consumer);
+    INFESTED_DEEPSLATE_SLAB            = blockItem("infested_deepslate_slab",            ModBlocks.INFESTED_DEEPSLATE_SLAB,            consumer);
+
+    // Waxed copper
+    WAXED_COPPER_BLOCK_SLAB   = blockItem("waxed_copper_block_slab",   ModBlocks.WAXED_COPPER_BLOCK_SLAB,   consumer);
+    WAXED_EXPOSED_COPPER_SLAB = blockItem("waxed_exposed_copper_slab", ModBlocks.WAXED_EXPOSED_COPPER_SLAB, consumer);
+    WAXED_OXIDIZED_COPPER_SLAB  = blockItem("waxed_oxidized_copper_slab",  ModBlocks.WAXED_OXIDIZED_COPPER_SLAB,  consumer);
+    WAXED_WEATHERED_COPPER_SLAB = blockItem("waxed_weathered_copper_slab", ModBlocks.WAXED_WEATHERED_COPPER_SLAB, consumer);
+
+    // Froglights
+    OCHRE_FROGLIGHT_SLAB       = blockItem("ochre_froglight_slab",       ModBlocks.OCHRE_FROGLIGHT_SLAB,       consumer);
+    PEARLESCENT_FROGLIGHT_SLAB = blockItem("pearlescent_froglight_slab", ModBlocks.PEARLESCENT_FROGLIGHT_SLAB, consumer);
+    VERDANT_FROGLIGHT_SLAB     = blockItem("verdant_froglight_slab",     ModBlocks.VERDANT_FROGLIGHT_SLAB,     consumer);
+
+    // Nylium
+    CRIMSON_NYLIUM_SLAB = blockItem("crimson_nylium_slab", ModBlocks.CRIMSON_NYLIUM_SLAB, consumer);
+    WARPED_NYLIUM_SLAB  = blockItem("warped_nylium_slab",  ModBlocks.WARPED_NYLIUM_SLAB,  consumer);
+
+    // Wood logs/wood/leaves
+    OAK_LOG_SLAB             = blockItem("oak_log_slab",             ModBlocks.OAK_LOG_SLAB,             consumer);
+    OAK_WOOD_SLAB            = blockItem("oak_wood_slab",            ModBlocks.OAK_WOOD_SLAB,            consumer);
+    STRIPPED_OAK_LOG_SLAB    = blockItem("stripped_oak_log_slab",    ModBlocks.STRIPPED_OAK_LOG_SLAB,    consumer);
+    STRIPPED_OAK_WOOD_SLAB   = blockItem("stripped_oak_wood_slab",   ModBlocks.STRIPPED_OAK_WOOD_SLAB,   consumer);
+    OAK_LEAVES_SLAB          = blockItem("oak_leaves_slab",          ModBlocks.OAK_LEAVES_SLAB,          consumer);
+    BIRCH_LOG_SLAB           = blockItem("birch_log_slab",           ModBlocks.BIRCH_LOG_SLAB,           consumer);
+    BIRCH_WOOD_SLAB          = blockItem("birch_wood_slab",          ModBlocks.BIRCH_WOOD_SLAB,          consumer);
+    STRIPPED_BIRCH_LOG_SLAB  = blockItem("stripped_birch_log_slab",  ModBlocks.STRIPPED_BIRCH_LOG_SLAB,  consumer);
+    STRIPPED_BIRCH_WOOD_SLAB = blockItem("stripped_birch_wood_slab", ModBlocks.STRIPPED_BIRCH_WOOD_SLAB, consumer);
+    BIRCH_LEAVES_SLAB        = blockItem("birch_leaves_slab",        ModBlocks.BIRCH_LEAVES_SLAB,        consumer);
+    SPRUCE_LOG_SLAB           = blockItem("spruce_log_slab",           ModBlocks.SPRUCE_LOG_SLAB,           consumer);
+    SPRUCE_WOOD_SLAB          = blockItem("spruce_wood_slab",          ModBlocks.SPRUCE_WOOD_SLAB,          consumer);
+    STRIPPED_SPRUCE_LOG_SLAB  = blockItem("stripped_spruce_log_slab",  ModBlocks.STRIPPED_SPRUCE_LOG_SLAB,  consumer);
+    STRIPPED_SPRUCE_WOOD_SLAB = blockItem("stripped_spruce_wood_slab", ModBlocks.STRIPPED_SPRUCE_WOOD_SLAB, consumer);
+    SPRUCE_LEAVES_SLAB        = blockItem("spruce_leaves_slab",        ModBlocks.SPRUCE_LEAVES_SLAB,        consumer);
+    JUNGLE_LOG_SLAB           = blockItem("jungle_log_slab",           ModBlocks.JUNGLE_LOG_SLAB,           consumer);
+    JUNGLE_WOOD_SLAB          = blockItem("jungle_wood_slab",          ModBlocks.JUNGLE_WOOD_SLAB,          consumer);
+    STRIPPED_JUNGLE_LOG_SLAB  = blockItem("stripped_jungle_log_slab",  ModBlocks.STRIPPED_JUNGLE_LOG_SLAB,  consumer);
+    STRIPPED_JUNGLE_WOOD_SLAB = blockItem("stripped_jungle_wood_slab", ModBlocks.STRIPPED_JUNGLE_WOOD_SLAB, consumer);
+    JUNGLE_LEAVES_SLAB        = blockItem("jungle_leaves_slab",        ModBlocks.JUNGLE_LEAVES_SLAB,        consumer);
+    ACACIA_LOG_SLAB           = blockItem("acacia_log_slab",           ModBlocks.ACACIA_LOG_SLAB,           consumer);
+    ACACIA_WOOD_SLAB          = blockItem("acacia_wood_slab",          ModBlocks.ACACIA_WOOD_SLAB,          consumer);
+    STRIPPED_ACACIA_LOG_SLAB  = blockItem("stripped_acacia_log_slab",  ModBlocks.STRIPPED_ACACIA_LOG_SLAB,  consumer);
+    STRIPPED_ACACIA_WOOD_SLAB = blockItem("stripped_acacia_wood_slab", ModBlocks.STRIPPED_ACACIA_WOOD_SLAB, consumer);
+    ACACIA_LEAVES_SLAB        = blockItem("acacia_leaves_slab",        ModBlocks.ACACIA_LEAVES_SLAB,        consumer);
+    DARK_OAK_LOG_SLAB           = blockItem("dark_oak_log_slab",           ModBlocks.DARK_OAK_LOG_SLAB,           consumer);
+    DARK_OAK_WOOD_SLAB          = blockItem("dark_oak_wood_slab",          ModBlocks.DARK_OAK_WOOD_SLAB,          consumer);
+    STRIPPED_DARK_OAK_LOG_SLAB  = blockItem("stripped_dark_oak_log_slab",  ModBlocks.STRIPPED_DARK_OAK_LOG_SLAB,  consumer);
+    STRIPPED_DARK_OAK_WOOD_SLAB = blockItem("stripped_dark_oak_wood_slab", ModBlocks.STRIPPED_DARK_OAK_WOOD_SLAB, consumer);
+    DARK_OAK_LEAVES_SLAB        = blockItem("dark_oak_leaves_slab",        ModBlocks.DARK_OAK_LEAVES_SLAB,        consumer);
+    CHERRY_LOG_SLAB           = blockItem("cherry_log_slab",           ModBlocks.CHERRY_LOG_SLAB,           consumer);
+    CHERRY_WOOD_SLAB          = blockItem("cherry_wood_slab",          ModBlocks.CHERRY_WOOD_SLAB,          consumer);
+    STRIPPED_CHERRY_LOG_SLAB  = blockItem("stripped_cherry_log_slab",  ModBlocks.STRIPPED_CHERRY_LOG_SLAB,  consumer);
+    STRIPPED_CHERRY_WOOD_SLAB = blockItem("stripped_cherry_wood_slab", ModBlocks.STRIPPED_CHERRY_WOOD_SLAB, consumer);
+    CHERRY_LEAVES_SLAB        = blockItem("cherry_leaves_slab",        ModBlocks.CHERRY_LEAVES_SLAB,        consumer);
+    MANGROVE_LOG_SLAB           = blockItem("mangrove_log_slab",           ModBlocks.MANGROVE_LOG_SLAB,           consumer);
+    MANGROVE_WOOD_SLAB          = blockItem("mangrove_wood_slab",          ModBlocks.MANGROVE_WOOD_SLAB,          consumer);
+    STRIPPED_MANGROVE_LOG_SLAB  = blockItem("stripped_mangrove_log_slab",  ModBlocks.STRIPPED_MANGROVE_LOG_SLAB,  consumer);
+    STRIPPED_MANGROVE_WOOD_SLAB = blockItem("stripped_mangrove_wood_slab", ModBlocks.STRIPPED_MANGROVE_WOOD_SLAB, consumer);
+    MANGROVE_LEAVES_SLAB        = blockItem("mangrove_leaves_slab",        ModBlocks.MANGROVE_LEAVES_SLAB,        consumer);
+
+    // Misc
+    ANCIENT_DEBRIS_SLAB       = blockItem("ancient_debris_slab",       ModBlocks.ANCIENT_DEBRIS_SLAB,       consumer);
+    BOOKSHELF_SLAB            = blockItem("bookshelf_slab",            ModBlocks.BOOKSHELF_SLAB,            consumer);
+    CHISELED_QUARTZ_BLOCK_SLAB = blockItem("chiseled_quartz_block_slab", ModBlocks.CHISELED_QUARTZ_BLOCK_SLAB, consumer);
+    CHISELED_RED_SANDSTONE_SLAB = blockItem("chiseled_red_sandstone_slab", ModBlocks.CHISELED_RED_SANDSTONE_SLAB, consumer);
+    CHISELED_SANDSTONE_SLAB   = blockItem("chiseled_sandstone_slab",   ModBlocks.CHISELED_SANDSTONE_SLAB,   consumer);
+    DEEPSLATE_SLAB            = blockItem("deepslate_slab",            ModBlocks.DEEPSLATE_SLAB,            consumer);
+    DRIED_KELP_BLOCK_SLAB     = blockItem("dried_kelp_block_slab",     ModBlocks.DRIED_KELP_BLOCK_SLAB,     consumer);
+    HAY_BLOCK_SLAB            = blockItem("hay_block_slab",            ModBlocks.HAY_BLOCK_SLAB,            consumer);
+    HONEY_BLOCK_SLAB          = blockItem("honey_block_slab",          ModBlocks.HONEY_BLOCK_SLAB,          consumer);
+    LADDER_SLAB               = blockItem("ladder_slab",               ModBlocks.LADDER_SLAB,               consumer);
+    MELON_SLAB                = blockItem("melon_slab",                ModBlocks.MELON_SLAB,                consumer);
+    PUMPKIN_SLAB              = blockItem("pumpkin_slab",              ModBlocks.PUMPKIN_SLAB,              consumer);
+    SCAFFOLDING_SLAB          = blockItem("scaffolding_slab",          ModBlocks.SCAFFOLDING_SLAB,          consumer);
+    SCULK_CATALYST_SLAB       = blockItem("sculk_catalyst_slab",       ModBlocks.SCULK_CATALYST_SLAB,       consumer);
+    SLIME_BLOCK_SLAB          = blockItem("slime_block_slab",          ModBlocks.SLIME_BLOCK_SLAB,          consumer);
+    TNT_SLAB                  = blockItem("tnt_slab",                  ModBlocks.TNT_SLAB,                  consumer);
+    TUFF_SLAB                 = blockItem("tuff_slab",                 ModBlocks.TUFF_SLAB,                 consumer);
   }
 
   private static Item blockItem(String name, Block block, BiConsumer<Item, Identifier> consumer) {

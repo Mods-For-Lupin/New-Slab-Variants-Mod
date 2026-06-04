@@ -271,6 +271,116 @@ public class ModBlocks {
   public static Block RED_TERRACOTTA_SLAB;
   public static Block BLACK_TERRACOTTA_SLAB;
 
+  // ── Glazed terracotta ─────────────────────────────────────────────────────
+  public static Block BLACK_GLAZED_TERRACOTTA_SLAB;
+  public static Block BLUE_GLAZED_TERRACOTTA_SLAB;
+  public static Block BROWN_GLAZED_TERRACOTTA_SLAB;
+  public static Block CYAN_GLAZED_TERRACOTTA_SLAB;
+  public static Block GRAY_GLAZED_TERRACOTTA_SLAB;
+  public static Block GREEN_GLAZED_TERRACOTTA_SLAB;
+  public static Block LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB;
+  public static Block LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB;
+  public static Block LIME_GLAZED_TERRACOTTA_SLAB;
+  public static Block MAGENTA_GLAZED_TERRACOTTA_SLAB;
+  public static Block ORANGE_GLAZED_TERRACOTTA_SLAB;
+  public static Block PINK_GLAZED_TERRACOTTA_SLAB;
+  public static Block PURPLE_GLAZED_TERRACOTTA_SLAB;
+  public static Block RED_GLAZED_TERRACOTTA_SLAB;
+  public static Block WHITE_GLAZED_TERRACOTTA_SLAB;
+  public static Block YELLOW_GLAZED_TERRACOTTA_SLAB;
+
+  // ── Infested blocks ───────────────────────────────────────────────────────
+  public static Block INFESTED_STONE_SLAB;
+  public static Block INFESTED_COBBLESTONE_SLAB;
+  public static Block INFESTED_STONE_BRICKS_SLAB;
+  public static Block INFESTED_CRACKED_STONE_BRICKS_SLAB;
+  public static Block INFESTED_CHISELED_STONE_BRICKS_SLAB;
+  public static Block INFESTED_MOSSY_STONE_BRICKS_SLAB;
+  public static Block INFESTED_DEEPSLATE_SLAB;
+
+  // ── Waxed copper ─────────────────────────────────────────────────────────
+  public static Block WAXED_COPPER_BLOCK_SLAB;
+  public static Block WAXED_EXPOSED_COPPER_SLAB;
+  public static Block WAXED_OXIDIZED_COPPER_SLAB;
+  public static Block WAXED_WEATHERED_COPPER_SLAB;
+
+  // ── Froglights ────────────────────────────────────────────────────────────
+  public static Block OCHRE_FROGLIGHT_SLAB;
+  public static Block PEARLESCENT_FROGLIGHT_SLAB;
+  public static Block VERDANT_FROGLIGHT_SLAB;
+
+  // ── Nylium ────────────────────────────────────────────────────────────────
+  public static Block CRIMSON_NYLIUM_SLAB;
+  public static Block WARPED_NYLIUM_SLAB;
+
+  // ── Wood logs / wood / leaves ─────────────────────────────────────────────
+  public static Block OAK_LOG_SLAB;
+  public static Block OAK_WOOD_SLAB;
+  public static Block STRIPPED_OAK_LOG_SLAB;
+  public static Block STRIPPED_OAK_WOOD_SLAB;
+  public static Block OAK_LEAVES_SLAB;
+
+  public static Block BIRCH_LOG_SLAB;
+  public static Block BIRCH_WOOD_SLAB;
+  public static Block STRIPPED_BIRCH_LOG_SLAB;
+  public static Block STRIPPED_BIRCH_WOOD_SLAB;
+  public static Block BIRCH_LEAVES_SLAB;
+
+  public static Block SPRUCE_LOG_SLAB;
+  public static Block SPRUCE_WOOD_SLAB;
+  public static Block STRIPPED_SPRUCE_LOG_SLAB;
+  public static Block STRIPPED_SPRUCE_WOOD_SLAB;
+  public static Block SPRUCE_LEAVES_SLAB;
+
+  public static Block JUNGLE_LOG_SLAB;
+  public static Block JUNGLE_WOOD_SLAB;
+  public static Block STRIPPED_JUNGLE_LOG_SLAB;
+  public static Block STRIPPED_JUNGLE_WOOD_SLAB;
+  public static Block JUNGLE_LEAVES_SLAB;
+
+  public static Block ACACIA_LOG_SLAB;
+  public static Block ACACIA_WOOD_SLAB;
+  public static Block STRIPPED_ACACIA_LOG_SLAB;
+  public static Block STRIPPED_ACACIA_WOOD_SLAB;
+  public static Block ACACIA_LEAVES_SLAB;
+
+  public static Block DARK_OAK_LOG_SLAB;
+  public static Block DARK_OAK_WOOD_SLAB;
+  public static Block STRIPPED_DARK_OAK_LOG_SLAB;
+  public static Block STRIPPED_DARK_OAK_WOOD_SLAB;
+  public static Block DARK_OAK_LEAVES_SLAB;
+
+  public static Block CHERRY_LOG_SLAB;
+  public static Block CHERRY_WOOD_SLAB;
+  public static Block STRIPPED_CHERRY_LOG_SLAB;
+  public static Block STRIPPED_CHERRY_WOOD_SLAB;
+  public static Block CHERRY_LEAVES_SLAB;
+
+  public static Block MANGROVE_LOG_SLAB;
+  public static Block MANGROVE_WOOD_SLAB;
+  public static Block STRIPPED_MANGROVE_LOG_SLAB;
+  public static Block STRIPPED_MANGROVE_WOOD_SLAB;
+  public static Block MANGROVE_LEAVES_SLAB;
+
+  // ── Misc ─────────────────────────────────────────────────────────────────
+  public static Block ANCIENT_DEBRIS_SLAB;
+  public static Block BOOKSHELF_SLAB;
+  public static Block CHISELED_QUARTZ_BLOCK_SLAB;
+  public static Block CHISELED_RED_SANDSTONE_SLAB;
+  public static Block CHISELED_SANDSTONE_SLAB;
+  public static Block DEEPSLATE_SLAB;
+  public static Block DRIED_KELP_BLOCK_SLAB;
+  public static Block HAY_BLOCK_SLAB;
+  public static Block HONEY_BLOCK_SLAB;
+  public static Block LADDER_SLAB;
+  public static Block MELON_SLAB;
+  public static Block PUMPKIN_SLAB;
+  public static Block SCAFFOLDING_SLAB;
+  public static Block SCULK_CATALYST_SLAB;
+  public static Block SLIME_BLOCK_SLAB;
+  public static Block TNT_SLAB;
+  public static Block TUFF_SLAB;
+
   public static void register(BiConsumer<Block, Identifier> consumer) {
     // Mineral/gem blocks
     COAL_BLOCK_SLAB        = slab("coal_block_slab",        Blocks.COAL_BLOCK,        consumer);
@@ -523,6 +633,123 @@ public class ModBlocks {
     GREEN_TERRACOTTA_SLAB      = slab("green_terracotta_slab",      Blocks.GREEN_TERRACOTTA,      consumer);
     RED_TERRACOTTA_SLAB        = slab("red_terracotta_slab",        Blocks.RED_TERRACOTTA,        consumer);
     BLACK_TERRACOTTA_SLAB      = slab("black_terracotta_slab",      Blocks.BLACK_TERRACOTTA,      consumer);
+
+    // Glazed terracotta
+    BLACK_GLAZED_TERRACOTTA_SLAB      = slab("black_glazed_terracotta_slab",      Blocks.BLACK_GLAZED_TERRACOTTA,      consumer);
+    BLUE_GLAZED_TERRACOTTA_SLAB       = slab("blue_glazed_terracotta_slab",       Blocks.BLUE_GLAZED_TERRACOTTA,       consumer);
+    BROWN_GLAZED_TERRACOTTA_SLAB      = slab("brown_glazed_terracotta_slab",      Blocks.BROWN_GLAZED_TERRACOTTA,      consumer);
+    CYAN_GLAZED_TERRACOTTA_SLAB       = slab("cyan_glazed_terracotta_slab",       Blocks.CYAN_GLAZED_TERRACOTTA,       consumer);
+    GRAY_GLAZED_TERRACOTTA_SLAB       = slab("gray_glazed_terracotta_slab",       Blocks.GRAY_GLAZED_TERRACOTTA,       consumer);
+    GREEN_GLAZED_TERRACOTTA_SLAB      = slab("green_glazed_terracotta_slab",      Blocks.GREEN_GLAZED_TERRACOTTA,      consumer);
+    LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB = slab("light_blue_glazed_terracotta_slab", Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA, consumer);
+    LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB = slab("light_gray_glazed_terracotta_slab", Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA, consumer);
+    LIME_GLAZED_TERRACOTTA_SLAB       = slab("lime_glazed_terracotta_slab",       Blocks.LIME_GLAZED_TERRACOTTA,       consumer);
+    MAGENTA_GLAZED_TERRACOTTA_SLAB    = slab("magenta_glazed_terracotta_slab",    Blocks.MAGENTA_GLAZED_TERRACOTTA,    consumer);
+    ORANGE_GLAZED_TERRACOTTA_SLAB     = slab("orange_glazed_terracotta_slab",     Blocks.ORANGE_GLAZED_TERRACOTTA,     consumer);
+    PINK_GLAZED_TERRACOTTA_SLAB       = slab("pink_glazed_terracotta_slab",       Blocks.PINK_GLAZED_TERRACOTTA,       consumer);
+    PURPLE_GLAZED_TERRACOTTA_SLAB     = slab("purple_glazed_terracotta_slab",     Blocks.PURPLE_GLAZED_TERRACOTTA,     consumer);
+    RED_GLAZED_TERRACOTTA_SLAB        = slab("red_glazed_terracotta_slab",        Blocks.RED_GLAZED_TERRACOTTA,        consumer);
+    WHITE_GLAZED_TERRACOTTA_SLAB      = slab("white_glazed_terracotta_slab",      Blocks.WHITE_GLAZED_TERRACOTTA,      consumer);
+    YELLOW_GLAZED_TERRACOTTA_SLAB     = slab("yellow_glazed_terracotta_slab",     Blocks.YELLOW_GLAZED_TERRACOTTA,     consumer);
+
+    // Infested blocks
+    INFESTED_STONE_SLAB                = slab("infested_stone_slab",                Blocks.INFESTED_STONE,                consumer);
+    INFESTED_COBBLESTONE_SLAB          = slab("infested_cobblestone_slab",          Blocks.INFESTED_COBBLESTONE,          consumer);
+    INFESTED_STONE_BRICKS_SLAB         = slab("infested_stone_bricks_slab",         Blocks.INFESTED_STONE_BRICKS,         consumer);
+    INFESTED_CRACKED_STONE_BRICKS_SLAB = slab("infested_cracked_stone_bricks_slab", Blocks.INFESTED_CRACKED_STONE_BRICKS, consumer);
+    INFESTED_CHISELED_STONE_BRICKS_SLAB = slab("infested_chiseled_stone_bricks_slab", Blocks.INFESTED_CHISELED_STONE_BRICKS, consumer);
+    INFESTED_MOSSY_STONE_BRICKS_SLAB   = slab("infested_mossy_stone_bricks_slab",   Blocks.INFESTED_MOSSY_STONE_BRICKS,   consumer);
+    INFESTED_DEEPSLATE_SLAB            = logSlab("infested_deepslate_slab",          Blocks.INFESTED_DEEPSLATE, MapColor.DEEPSLATE, consumer);
+
+    // Waxed copper
+    WAXED_COPPER_BLOCK_SLAB   = slab("waxed_copper_block_slab",   Blocks.WAXED_COPPER_BLOCK,   consumer);
+    WAXED_EXPOSED_COPPER_SLAB = slab("waxed_exposed_copper_slab", Blocks.WAXED_EXPOSED_COPPER, consumer);
+    WAXED_OXIDIZED_COPPER_SLAB  = slab("waxed_oxidized_copper_slab",  Blocks.WAXED_OXIDIZED_COPPER,  consumer);
+    WAXED_WEATHERED_COPPER_SLAB = slab("waxed_weathered_copper_slab", Blocks.WAXED_WEATHERED_COPPER, consumer);
+
+    // Froglights (RotatedPillarBlock — AXIS mapColor lambda crashes; override with static color)
+    OCHRE_FROGLIGHT_SLAB       = logSlab("ochre_froglight_slab",       Blocks.OCHRE_FROGLIGHT,       MapColor.SAND,         consumer);
+    PEARLESCENT_FROGLIGHT_SLAB = logSlab("pearlescent_froglight_slab", Blocks.PEARLESCENT_FROGLIGHT, MapColor.TERRACOTTA_PINK, consumer);
+    VERDANT_FROGLIGHT_SLAB     = logSlab("verdant_froglight_slab",     Blocks.VERDANT_FROGLIGHT,     MapColor.COLOR_GREEN,  consumer);
+
+    // Nylium
+    CRIMSON_NYLIUM_SLAB = slab("crimson_nylium_slab", Blocks.CRIMSON_NYLIUM, consumer);
+    WARPED_NYLIUM_SLAB  = slab("warped_nylium_slab",  Blocks.WARPED_NYLIUM,  consumer);
+
+    // Oak
+    OAK_LOG_SLAB          = logSlab("oak_log_slab",          Blocks.OAK_LOG,          MapColor.WOOD,  consumer);
+    OAK_WOOD_SLAB         = logSlab("oak_wood_slab",         Blocks.OAK_WOOD,         MapColor.WOOD,  consumer);
+    STRIPPED_OAK_LOG_SLAB  = logSlab("stripped_oak_log_slab",  Blocks.STRIPPED_OAK_LOG,  MapColor.WOOD,  consumer);
+    STRIPPED_OAK_WOOD_SLAB = logSlab("stripped_oak_wood_slab", Blocks.STRIPPED_OAK_WOOD, MapColor.WOOD,  consumer);
+    OAK_LEAVES_SLAB       = slab("oak_leaves_slab",       Blocks.OAK_LEAVES,       consumer);
+
+    // Birch
+    BIRCH_LOG_SLAB          = logSlab("birch_log_slab",          Blocks.BIRCH_LOG,          MapColor.SAND,  consumer);
+    BIRCH_WOOD_SLAB         = logSlab("birch_wood_slab",         Blocks.BIRCH_WOOD,         MapColor.SAND,  consumer);
+    STRIPPED_BIRCH_LOG_SLAB  = logSlab("stripped_birch_log_slab",  Blocks.STRIPPED_BIRCH_LOG,  MapColor.SAND,  consumer);
+    STRIPPED_BIRCH_WOOD_SLAB = logSlab("stripped_birch_wood_slab", Blocks.STRIPPED_BIRCH_WOOD, MapColor.SAND,  consumer);
+    BIRCH_LEAVES_SLAB       = slab("birch_leaves_slab",       Blocks.BIRCH_LEAVES,       consumer);
+
+    // Spruce
+    SPRUCE_LOG_SLAB          = logSlab("spruce_log_slab",          Blocks.SPRUCE_LOG,          MapColor.PODZOL, consumer);
+    SPRUCE_WOOD_SLAB         = logSlab("spruce_wood_slab",         Blocks.SPRUCE_WOOD,         MapColor.PODZOL, consumer);
+    STRIPPED_SPRUCE_LOG_SLAB  = logSlab("stripped_spruce_log_slab",  Blocks.STRIPPED_SPRUCE_LOG,  MapColor.PODZOL, consumer);
+    STRIPPED_SPRUCE_WOOD_SLAB = logSlab("stripped_spruce_wood_slab", Blocks.STRIPPED_SPRUCE_WOOD, MapColor.PODZOL, consumer);
+    SPRUCE_LEAVES_SLAB       = slab("spruce_leaves_slab",       Blocks.SPRUCE_LEAVES,       consumer);
+
+    // Jungle
+    JUNGLE_LOG_SLAB          = logSlab("jungle_log_slab",          Blocks.JUNGLE_LOG,          MapColor.DIRT,         consumer);
+    JUNGLE_WOOD_SLAB         = logSlab("jungle_wood_slab",         Blocks.JUNGLE_WOOD,         MapColor.DIRT,         consumer);
+    STRIPPED_JUNGLE_LOG_SLAB  = logSlab("stripped_jungle_log_slab",  Blocks.STRIPPED_JUNGLE_LOG,  MapColor.DIRT,         consumer);
+    STRIPPED_JUNGLE_WOOD_SLAB = logSlab("stripped_jungle_wood_slab", Blocks.STRIPPED_JUNGLE_WOOD, MapColor.DIRT,         consumer);
+    JUNGLE_LEAVES_SLAB       = slab("jungle_leaves_slab",       Blocks.JUNGLE_LEAVES,       consumer);
+
+    // Acacia
+    ACACIA_LOG_SLAB          = logSlab("acacia_log_slab",          Blocks.ACACIA_LOG,          MapColor.COLOR_ORANGE, consumer);
+    ACACIA_WOOD_SLAB         = logSlab("acacia_wood_slab",         Blocks.ACACIA_WOOD,         MapColor.COLOR_ORANGE, consumer);
+    STRIPPED_ACACIA_LOG_SLAB  = logSlab("stripped_acacia_log_slab",  Blocks.STRIPPED_ACACIA_LOG,  MapColor.COLOR_ORANGE, consumer);
+    STRIPPED_ACACIA_WOOD_SLAB = logSlab("stripped_acacia_wood_slab", Blocks.STRIPPED_ACACIA_WOOD, MapColor.COLOR_ORANGE, consumer);
+    ACACIA_LEAVES_SLAB       = slab("acacia_leaves_slab",       Blocks.ACACIA_LEAVES,       consumer);
+
+    // Dark Oak
+    DARK_OAK_LOG_SLAB          = logSlab("dark_oak_log_slab",          Blocks.DARK_OAK_LOG,          MapColor.COLOR_BROWN, consumer);
+    DARK_OAK_WOOD_SLAB         = logSlab("dark_oak_wood_slab",         Blocks.DARK_OAK_WOOD,         MapColor.COLOR_BROWN, consumer);
+    STRIPPED_DARK_OAK_LOG_SLAB  = logSlab("stripped_dark_oak_log_slab",  Blocks.STRIPPED_DARK_OAK_LOG,  MapColor.COLOR_BROWN, consumer);
+    STRIPPED_DARK_OAK_WOOD_SLAB = logSlab("stripped_dark_oak_wood_slab", Blocks.STRIPPED_DARK_OAK_WOOD, MapColor.COLOR_BROWN, consumer);
+    DARK_OAK_LEAVES_SLAB       = slab("dark_oak_leaves_slab",       Blocks.DARK_OAK_LEAVES,       consumer);
+
+    // Cherry
+    CHERRY_LOG_SLAB          = logSlab("cherry_log_slab",          Blocks.CHERRY_LOG,          MapColor.TERRACOTTA_WHITE, consumer);
+    CHERRY_WOOD_SLAB         = logSlab("cherry_wood_slab",         Blocks.CHERRY_WOOD,         MapColor.TERRACOTTA_WHITE, consumer);
+    STRIPPED_CHERRY_LOG_SLAB  = logSlab("stripped_cherry_log_slab",  Blocks.STRIPPED_CHERRY_LOG,  MapColor.TERRACOTTA_WHITE, consumer);
+    STRIPPED_CHERRY_WOOD_SLAB = logSlab("stripped_cherry_wood_slab", Blocks.STRIPPED_CHERRY_WOOD, MapColor.TERRACOTTA_WHITE, consumer);
+    CHERRY_LEAVES_SLAB       = slab("cherry_leaves_slab",       Blocks.CHERRY_LEAVES,       consumer);
+
+    // Mangrove
+    MANGROVE_LOG_SLAB          = logSlab("mangrove_log_slab",          Blocks.MANGROVE_LOG,          MapColor.COLOR_RED, consumer);
+    MANGROVE_WOOD_SLAB         = logSlab("mangrove_wood_slab",         Blocks.MANGROVE_WOOD,         MapColor.COLOR_RED, consumer);
+    STRIPPED_MANGROVE_LOG_SLAB  = logSlab("stripped_mangrove_log_slab",  Blocks.STRIPPED_MANGROVE_LOG,  MapColor.COLOR_RED, consumer);
+    STRIPPED_MANGROVE_WOOD_SLAB = logSlab("stripped_mangrove_wood_slab", Blocks.STRIPPED_MANGROVE_WOOD, MapColor.COLOR_RED, consumer);
+    MANGROVE_LEAVES_SLAB       = slab("mangrove_leaves_slab",       Blocks.MANGROVE_LEAVES,       consumer);
+
+    // Misc
+    ANCIENT_DEBRIS_SLAB      = slab("ancient_debris_slab",      Blocks.ANCIENT_DEBRIS,      consumer);
+    BOOKSHELF_SLAB           = slab("bookshelf_slab",           Blocks.BOOKSHELF,           consumer);
+    CHISELED_QUARTZ_BLOCK_SLAB = slab("chiseled_quartz_block_slab", Blocks.CHISELED_QUARTZ_BLOCK, consumer);
+    CHISELED_RED_SANDSTONE_SLAB = slab("chiseled_red_sandstone_slab", Blocks.CHISELED_RED_SANDSTONE, consumer);
+    CHISELED_SANDSTONE_SLAB  = slab("chiseled_sandstone_slab",  Blocks.CHISELED_SANDSTONE,  consumer);
+    DEEPSLATE_SLAB           = logSlab("deepslate_slab",           Blocks.DEEPSLATE,           MapColor.DEEPSLATE, consumer);
+    DRIED_KELP_BLOCK_SLAB    = logSlab("dried_kelp_block_slab",    Blocks.DRIED_KELP_BLOCK,    MapColor.COLOR_GREEN, consumer);
+    HAY_BLOCK_SLAB           = logSlab("hay_block_slab",           Blocks.HAY_BLOCK,           MapColor.COLOR_YELLOW, consumer);
+    HONEY_BLOCK_SLAB         = slab("honey_block_slab",         Blocks.HONEY_BLOCK,         consumer);
+    LADDER_SLAB              = slab("ladder_slab",              Blocks.LADDER,              consumer);
+    MELON_SLAB               = slab("melon_slab",               Blocks.MELON,               consumer);
+    PUMPKIN_SLAB             = slab("pumpkin_slab",             Blocks.PUMPKIN,             consumer);
+    SCAFFOLDING_SLAB         = slab("scaffolding_slab",         Blocks.SCAFFOLDING,         consumer);
+    SCULK_CATALYST_SLAB      = slab("sculk_catalyst_slab",      Blocks.SCULK_CATALYST,      consumer);
+    SLIME_BLOCK_SLAB         = slab("slime_block_slab",         Blocks.SLIME_BLOCK,         consumer);
+    TNT_SLAB                 = slab("tnt_slab",                 Blocks.TNT,                 consumer);
+    TUFF_SLAB                = slab("tuff_slab",                Blocks.TUFF,                consumer);
   }
 
   private static Block slab(String name, Properties props, BiConsumer<Block, Identifier> consumer) {
@@ -534,6 +761,13 @@ public class ModBlocks {
   @SuppressWarnings("deprecation")
   private static Block litSlab(String name, Block source, BiConsumer<Block, Identifier> consumer) {
     return construct(name, SlabBlock::new, BlockBehaviour.Properties.ofLegacyCopy(source).lightLevel(state -> 0), consumer);
+  }
+
+  // RotatedPillarBlock sources (logs, froglights, deepslate, hay, dried kelp) have a mapColor
+  // lambda that reads AXIS — a property slabs don't have. Override with a static color.
+  @SuppressWarnings("deprecation")
+  private static Block logSlab(String name, Block source, MapColor mapColor, BiConsumer<Block, Identifier> consumer) {
+    return construct(name, SlabBlock::new, BlockBehaviour.Properties.ofLegacyCopy(source).mapColor(mapColor), consumer);
   }
 
   // copper_bulb variants have BOTH a state-dependent mapColor (reads LIT) and lightLevel (reads LIT)

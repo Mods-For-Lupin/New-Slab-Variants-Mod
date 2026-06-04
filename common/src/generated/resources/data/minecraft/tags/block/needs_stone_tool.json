@@ -28,6 +28,10 @@
     "new_slab_variants:weathered_copper_bulb_slab",
     "new_slab_variants:amethyst_block_slab",
     "new_slab_variants:budding_amethyst_slab",
-    "new_slab_variants:sculk_slab"
+    "new_slab_variants:sculk_slab",
+    "new_slab_variants:waxed_copper_block_slab",
+    "new_slab_variants:waxed_exposed_copper_slab",
+    "new_slab_variants:waxed_oxidized_copper_slab",
+    "new_slab_variants:waxed_weathered_copper_slab"
   ]
 }

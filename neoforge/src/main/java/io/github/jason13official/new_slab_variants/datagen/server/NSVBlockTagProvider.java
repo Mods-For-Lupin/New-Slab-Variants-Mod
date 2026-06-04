@@ -137,7 +137,43 @@ public class NSVBlockTagProvider extends IntrinsicHolderTagsProvider<Block> {
         .add(ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB).add(ModBlocks.CYAN_TERRACOTTA_SLAB)
         .add(ModBlocks.PURPLE_TERRACOTTA_SLAB).add(ModBlocks.BLUE_TERRACOTTA_SLAB)
         .add(ModBlocks.BROWN_TERRACOTTA_SLAB).add(ModBlocks.GREEN_TERRACOTTA_SLAB)
-        .add(ModBlocks.RED_TERRACOTTA_SLAB).add(ModBlocks.BLACK_TERRACOTTA_SLAB);
+        .add(ModBlocks.RED_TERRACOTTA_SLAB).add(ModBlocks.BLACK_TERRACOTTA_SLAB)
+        // Glazed terracotta
+        .add(ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB)
+        .add(ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.CYAN_GLAZED_TERRACOTTA_SLAB)
+        .add(ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB)
+        .add(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB)
+        .add(ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB)
+        .add(ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB)
+        .add(ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.RED_GLAZED_TERRACOTTA_SLAB)
+        .add(ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB)
+        // Infested blocks
+        .add(ModBlocks.INFESTED_STONE_SLAB).add(ModBlocks.INFESTED_COBBLESTONE_SLAB)
+        .add(ModBlocks.INFESTED_STONE_BRICKS_SLAB).add(ModBlocks.INFESTED_CRACKED_STONE_BRICKS_SLAB)
+        .add(ModBlocks.INFESTED_CHISELED_STONE_BRICKS_SLAB).add(ModBlocks.INFESTED_MOSSY_STONE_BRICKS_SLAB)
+        .add(ModBlocks.INFESTED_DEEPSLATE_SLAB)
+        // Waxed copper
+        .add(ModBlocks.WAXED_COPPER_BLOCK_SLAB).add(ModBlocks.WAXED_EXPOSED_COPPER_SLAB)
+        .add(ModBlocks.WAXED_OXIDIZED_COPPER_SLAB).add(ModBlocks.WAXED_WEATHERED_COPPER_SLAB)
+        // Froglights
+        .add(ModBlocks.OCHRE_FROGLIGHT_SLAB).add(ModBlocks.PEARLESCENT_FROGLIGHT_SLAB).add(ModBlocks.VERDANT_FROGLIGHT_SLAB)
+        // Nylium
+        .add(ModBlocks.CRIMSON_NYLIUM_SLAB).add(ModBlocks.WARPED_NYLIUM_SLAB)
+        // Wood logs/wood/leaves
+        .add(ModBlocks.OAK_LOG_SLAB).add(ModBlocks.OAK_WOOD_SLAB).add(ModBlocks.STRIPPED_OAK_LOG_SLAB).add(ModBlocks.STRIPPED_OAK_WOOD_SLAB).add(ModBlocks.OAK_LEAVES_SLAB)
+        .add(ModBlocks.BIRCH_LOG_SLAB).add(ModBlocks.BIRCH_WOOD_SLAB).add(ModBlocks.STRIPPED_BIRCH_LOG_SLAB).add(ModBlocks.STRIPPED_BIRCH_WOOD_SLAB).add(ModBlocks.BIRCH_LEAVES_SLAB)
+        .add(ModBlocks.SPRUCE_LOG_SLAB).add(ModBlocks.SPRUCE_WOOD_SLAB).add(ModBlocks.STRIPPED_SPRUCE_LOG_SLAB).add(ModBlocks.STRIPPED_SPRUCE_WOOD_SLAB).add(ModBlocks.SPRUCE_LEAVES_SLAB)
+        .add(ModBlocks.JUNGLE_LOG_SLAB).add(ModBlocks.JUNGLE_WOOD_SLAB).add(ModBlocks.STRIPPED_JUNGLE_LOG_SLAB).add(ModBlocks.STRIPPED_JUNGLE_WOOD_SLAB).add(ModBlocks.JUNGLE_LEAVES_SLAB)
+        .add(ModBlocks.ACACIA_LOG_SLAB).add(ModBlocks.ACACIA_WOOD_SLAB).add(ModBlocks.STRIPPED_ACACIA_LOG_SLAB).add(ModBlocks.STRIPPED_ACACIA_WOOD_SLAB).add(ModBlocks.ACACIA_LEAVES_SLAB)
+        .add(ModBlocks.DARK_OAK_LOG_SLAB).add(ModBlocks.DARK_OAK_WOOD_SLAB).add(ModBlocks.STRIPPED_DARK_OAK_LOG_SLAB).add(ModBlocks.STRIPPED_DARK_OAK_WOOD_SLAB).add(ModBlocks.DARK_OAK_LEAVES_SLAB)
+        .add(ModBlocks.CHERRY_LOG_SLAB).add(ModBlocks.CHERRY_WOOD_SLAB).add(ModBlocks.STRIPPED_CHERRY_LOG_SLAB).add(ModBlocks.STRIPPED_CHERRY_WOOD_SLAB).add(ModBlocks.CHERRY_LEAVES_SLAB)
+        .add(ModBlocks.MANGROVE_LOG_SLAB).add(ModBlocks.MANGROVE_WOOD_SLAB).add(ModBlocks.STRIPPED_MANGROVE_LOG_SLAB).add(ModBlocks.STRIPPED_MANGROVE_WOOD_SLAB).add(ModBlocks.MANGROVE_LEAVES_SLAB)
+        // Misc
+        .add(ModBlocks.ANCIENT_DEBRIS_SLAB).add(ModBlocks.BOOKSHELF_SLAB).add(ModBlocks.CHISELED_QUARTZ_BLOCK_SLAB)
+        .add(ModBlocks.CHISELED_RED_SANDSTONE_SLAB).add(ModBlocks.CHISELED_SANDSTONE_SLAB).add(ModBlocks.DEEPSLATE_SLAB)
+        .add(ModBlocks.DRIED_KELP_BLOCK_SLAB).add(ModBlocks.HAY_BLOCK_SLAB).add(ModBlocks.HONEY_BLOCK_SLAB)
+        .add(ModBlocks.LADDER_SLAB).add(ModBlocks.MELON_SLAB).add(ModBlocks.PUMPKIN_SLAB).add(ModBlocks.SCAFFOLDING_SLAB)
+        .add(ModBlocks.SCULK_CATALYST_SLAB).add(ModBlocks.SLIME_BLOCK_SLAB).add(ModBlocks.TNT_SLAB).add(ModBlocks.TUFF_SLAB);
 
     // ── MINEABLE_WITH_PICKAXE ─────────────────────────────────────────────────
     tag(BlockTags.MINEABLE_WITH_PICKAXE)
@@ -212,7 +248,32 @@ public class NSVBlockTagProvider extends IntrinsicHolderTagsProvider<Block> {
         .add(ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB).add(ModBlocks.CYAN_TERRACOTTA_SLAB)
         .add(ModBlocks.PURPLE_TERRACOTTA_SLAB).add(ModBlocks.BLUE_TERRACOTTA_SLAB)
         .add(ModBlocks.BROWN_TERRACOTTA_SLAB).add(ModBlocks.GREEN_TERRACOTTA_SLAB)
-        .add(ModBlocks.RED_TERRACOTTA_SLAB).add(ModBlocks.BLACK_TERRACOTTA_SLAB);
+        .add(ModBlocks.RED_TERRACOTTA_SLAB).add(ModBlocks.BLACK_TERRACOTTA_SLAB)
+        // Glazed terracotta
+        .add(ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB)
+        .add(ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.CYAN_GLAZED_TERRACOTTA_SLAB)
+        .add(ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB)
+        .add(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB)
+        .add(ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB)
+        .add(ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB)
+        .add(ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.RED_GLAZED_TERRACOTTA_SLAB)
+        .add(ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB).add(ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB)
+        // Infested blocks
+        .add(ModBlocks.INFESTED_STONE_SLAB).add(ModBlocks.INFESTED_COBBLESTONE_SLAB)
+        .add(ModBlocks.INFESTED_STONE_BRICKS_SLAB).add(ModBlocks.INFESTED_CRACKED_STONE_BRICKS_SLAB)
+        .add(ModBlocks.INFESTED_CHISELED_STONE_BRICKS_SLAB).add(ModBlocks.INFESTED_MOSSY_STONE_BRICKS_SLAB)
+        .add(ModBlocks.INFESTED_DEEPSLATE_SLAB)
+        // Waxed copper
+        .add(ModBlocks.WAXED_COPPER_BLOCK_SLAB).add(ModBlocks.WAXED_EXPOSED_COPPER_SLAB)
+        .add(ModBlocks.WAXED_OXIDIZED_COPPER_SLAB).add(ModBlocks.WAXED_WEATHERED_COPPER_SLAB)
+        // Froglights
+        .add(ModBlocks.OCHRE_FROGLIGHT_SLAB).add(ModBlocks.PEARLESCENT_FROGLIGHT_SLAB).add(ModBlocks.VERDANT_FROGLIGHT_SLAB)
+        // Nylium
+        .add(ModBlocks.CRIMSON_NYLIUM_SLAB).add(ModBlocks.WARPED_NYLIUM_SLAB)
+        // Misc (pickaxe-minable)
+        .add(ModBlocks.ANCIENT_DEBRIS_SLAB).add(ModBlocks.CHISELED_QUARTZ_BLOCK_SLAB)
+        .add(ModBlocks.CHISELED_RED_SANDSTONE_SLAB).add(ModBlocks.CHISELED_SANDSTONE_SLAB)
+        .add(ModBlocks.DEEPSLATE_SLAB).add(ModBlocks.SCULK_CATALYST_SLAB).add(ModBlocks.TUFF_SLAB);
 
     // ── NEEDS_STONE_TOOL ──────────────────────────────────────────────────────
     tag(BlockTags.NEEDS_STONE_TOOL)
@@ -234,7 +295,10 @@ public class NSVBlockTagProvider extends IntrinsicHolderTagsProvider<Block> {
         .add(ModBlocks.OXIDIZED_COPPER_BULB_SLAB).add(ModBlocks.WEATHERED_COPPER_BULB_SLAB)
         // Amethyst/sculk
         .add(ModBlocks.AMETHYST_BLOCK_SLAB).add(ModBlocks.BUDDING_AMETHYST_SLAB)
-        .add(ModBlocks.SCULK_SLAB);
+        .add(ModBlocks.SCULK_SLAB)
+        // Waxed copper (same tier as non-waxed)
+        .add(ModBlocks.WAXED_COPPER_BLOCK_SLAB).add(ModBlocks.WAXED_EXPOSED_COPPER_SLAB)
+        .add(ModBlocks.WAXED_OXIDIZED_COPPER_SLAB).add(ModBlocks.WAXED_WEATHERED_COPPER_SLAB);
 
     // ── NEEDS_IRON_TOOL ───────────────────────────────────────────────────────
     tag(BlockTags.NEEDS_IRON_TOOL)
@@ -262,7 +326,17 @@ public class NSVBlockTagProvider extends IntrinsicHolderTagsProvider<Block> {
         .add(ModBlocks.BROWN_MUSHROOM_BLOCK_SLAB).add(ModBlocks.RED_MUSHROOM_BLOCK_SLAB)
         .add(ModBlocks.MUSHROOM_STEM_SLAB)
         .add(ModBlocks.NOTE_BLOCK_SLAB)
-        .add(ModBlocks.HONEYCOMB_BLOCK_SLAB);
+        .add(ModBlocks.HONEYCOMB_BLOCK_SLAB)
+        // Logs / wood / stripped
+        .add(ModBlocks.OAK_LOG_SLAB).add(ModBlocks.OAK_WOOD_SLAB).add(ModBlocks.STRIPPED_OAK_LOG_SLAB).add(ModBlocks.STRIPPED_OAK_WOOD_SLAB)
+        .add(ModBlocks.BIRCH_LOG_SLAB).add(ModBlocks.BIRCH_WOOD_SLAB).add(ModBlocks.STRIPPED_BIRCH_LOG_SLAB).add(ModBlocks.STRIPPED_BIRCH_WOOD_SLAB)
+        .add(ModBlocks.SPRUCE_LOG_SLAB).add(ModBlocks.SPRUCE_WOOD_SLAB).add(ModBlocks.STRIPPED_SPRUCE_LOG_SLAB).add(ModBlocks.STRIPPED_SPRUCE_WOOD_SLAB)
+        .add(ModBlocks.JUNGLE_LOG_SLAB).add(ModBlocks.JUNGLE_WOOD_SLAB).add(ModBlocks.STRIPPED_JUNGLE_LOG_SLAB).add(ModBlocks.STRIPPED_JUNGLE_WOOD_SLAB)
+        .add(ModBlocks.ACACIA_LOG_SLAB).add(ModBlocks.ACACIA_WOOD_SLAB).add(ModBlocks.STRIPPED_ACACIA_LOG_SLAB).add(ModBlocks.STRIPPED_ACACIA_WOOD_SLAB)
+        .add(ModBlocks.DARK_OAK_LOG_SLAB).add(ModBlocks.DARK_OAK_WOOD_SLAB).add(ModBlocks.STRIPPED_DARK_OAK_LOG_SLAB).add(ModBlocks.STRIPPED_DARK_OAK_WOOD_SLAB)
+        .add(ModBlocks.CHERRY_LOG_SLAB).add(ModBlocks.CHERRY_WOOD_SLAB).add(ModBlocks.STRIPPED_CHERRY_LOG_SLAB).add(ModBlocks.STRIPPED_CHERRY_WOOD_SLAB)
+        .add(ModBlocks.MANGROVE_LOG_SLAB).add(ModBlocks.MANGROVE_WOOD_SLAB).add(ModBlocks.STRIPPED_MANGROVE_LOG_SLAB).add(ModBlocks.STRIPPED_MANGROVE_WOOD_SLAB)
+        .add(ModBlocks.BOOKSHELF_SLAB).add(ModBlocks.DRIED_KELP_BLOCK_SLAB);
 
     // ── MINEABLE_WITH_SHOVEL ─────────────────────────────────────────────────
     tag(BlockTags.MINEABLE_WITH_SHOVEL)
@@ -281,6 +355,12 @@ public class NSVBlockTagProvider extends IntrinsicHolderTagsProvider<Block> {
         // New
         .add(ModBlocks.NETHER_WART_BLOCK_SLAB).add(ModBlocks.WARPED_WART_BLOCK_SLAB)
         .add(ModBlocks.SHROOMLIGHT_SLAB)
-        .add(ModBlocks.AZALEA_LEAVES_SLAB).add(ModBlocks.FLOWERING_AZALEA_LEAVES_SLAB);
+        .add(ModBlocks.AZALEA_LEAVES_SLAB).add(ModBlocks.FLOWERING_AZALEA_LEAVES_SLAB)
+        // All tree leaves
+        .add(ModBlocks.OAK_LEAVES_SLAB).add(ModBlocks.BIRCH_LEAVES_SLAB).add(ModBlocks.SPRUCE_LEAVES_SLAB)
+        .add(ModBlocks.JUNGLE_LEAVES_SLAB).add(ModBlocks.ACACIA_LEAVES_SLAB).add(ModBlocks.DARK_OAK_LEAVES_SLAB)
+        .add(ModBlocks.CHERRY_LEAVES_SLAB).add(ModBlocks.MANGROVE_LEAVES_SLAB)
+        // Misc hoe
+        .add(ModBlocks.HAY_BLOCK_SLAB).add(ModBlocks.CRIMSON_NYLIUM_SLAB).add(ModBlocks.WARPED_NYLIUM_SLAB);
   }
 }

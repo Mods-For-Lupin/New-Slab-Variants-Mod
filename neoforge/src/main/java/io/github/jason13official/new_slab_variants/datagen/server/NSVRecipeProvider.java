@@ -281,6 +281,109 @@ public class NSVRecipeProvider extends RecipeProvider.Runner {
         slab(ModBlocks.RED_TERRACOTTA_SLAB,        Blocks.RED_TERRACOTTA);
         slab(ModBlocks.BLACK_TERRACOTTA_SLAB,      Blocks.BLACK_TERRACOTTA);
 
+        // Glazed terracotta
+        slab(ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB,      Blocks.BLACK_GLAZED_TERRACOTTA);
+        slab(ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB,       Blocks.BLUE_GLAZED_TERRACOTTA);
+        slab(ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB,      Blocks.BROWN_GLAZED_TERRACOTTA);
+        slab(ModBlocks.CYAN_GLAZED_TERRACOTTA_SLAB,       Blocks.CYAN_GLAZED_TERRACOTTA);
+        slab(ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB,       Blocks.GRAY_GLAZED_TERRACOTTA);
+        slab(ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB,      Blocks.GREEN_GLAZED_TERRACOTTA);
+        slab(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB, Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA);
+        slab(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB, Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA);
+        slab(ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB,       Blocks.LIME_GLAZED_TERRACOTTA);
+        slab(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB,    Blocks.MAGENTA_GLAZED_TERRACOTTA);
+        slab(ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB,     Blocks.ORANGE_GLAZED_TERRACOTTA);
+        slab(ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB,       Blocks.PINK_GLAZED_TERRACOTTA);
+        slab(ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB,     Blocks.PURPLE_GLAZED_TERRACOTTA);
+        slab(ModBlocks.RED_GLAZED_TERRACOTTA_SLAB,        Blocks.RED_GLAZED_TERRACOTTA);
+        slab(ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB,      Blocks.WHITE_GLAZED_TERRACOTTA);
+        slab(ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB,     Blocks.YELLOW_GLAZED_TERRACOTTA);
+
+        // Infested blocks
+        slab(ModBlocks.INFESTED_STONE_SLAB,                Blocks.INFESTED_STONE);
+        slab(ModBlocks.INFESTED_COBBLESTONE_SLAB,          Blocks.INFESTED_COBBLESTONE);
+        slab(ModBlocks.INFESTED_STONE_BRICKS_SLAB,         Blocks.INFESTED_STONE_BRICKS);
+        slab(ModBlocks.INFESTED_CRACKED_STONE_BRICKS_SLAB, Blocks.INFESTED_CRACKED_STONE_BRICKS);
+        slab(ModBlocks.INFESTED_CHISELED_STONE_BRICKS_SLAB, Blocks.INFESTED_CHISELED_STONE_BRICKS);
+        slab(ModBlocks.INFESTED_MOSSY_STONE_BRICKS_SLAB,   Blocks.INFESTED_MOSSY_STONE_BRICKS);
+        slab(ModBlocks.INFESTED_DEEPSLATE_SLAB,            Blocks.INFESTED_DEEPSLATE);
+
+        // Waxed copper
+        slab(ModBlocks.WAXED_COPPER_BLOCK_SLAB,   Blocks.WAXED_COPPER_BLOCK);
+        slab(ModBlocks.WAXED_EXPOSED_COPPER_SLAB, Blocks.WAXED_EXPOSED_COPPER);
+        slab(ModBlocks.WAXED_OXIDIZED_COPPER_SLAB,  Blocks.WAXED_OXIDIZED_COPPER);
+        slab(ModBlocks.WAXED_WEATHERED_COPPER_SLAB, Blocks.WAXED_WEATHERED_COPPER);
+
+        // Froglights
+        slab(ModBlocks.OCHRE_FROGLIGHT_SLAB,       Blocks.OCHRE_FROGLIGHT);
+        slab(ModBlocks.PEARLESCENT_FROGLIGHT_SLAB, Blocks.PEARLESCENT_FROGLIGHT);
+        slab(ModBlocks.VERDANT_FROGLIGHT_SLAB,     Blocks.VERDANT_FROGLIGHT);
+
+        // Nylium
+        slab(ModBlocks.CRIMSON_NYLIUM_SLAB, Blocks.CRIMSON_NYLIUM);
+        slab(ModBlocks.WARPED_NYLIUM_SLAB,  Blocks.WARPED_NYLIUM);
+
+        // Wood logs/wood/leaves
+        slab(ModBlocks.OAK_LOG_SLAB,             Blocks.OAK_LOG);
+        slab(ModBlocks.OAK_WOOD_SLAB,            Blocks.OAK_WOOD);
+        slab(ModBlocks.STRIPPED_OAK_LOG_SLAB,    Blocks.STRIPPED_OAK_LOG);
+        slab(ModBlocks.STRIPPED_OAK_WOOD_SLAB,   Blocks.STRIPPED_OAK_WOOD);
+        slab(ModBlocks.OAK_LEAVES_SLAB,          Blocks.OAK_LEAVES);
+        slab(ModBlocks.BIRCH_LOG_SLAB,           Blocks.BIRCH_LOG);
+        slab(ModBlocks.BIRCH_WOOD_SLAB,          Blocks.BIRCH_WOOD);
+        slab(ModBlocks.STRIPPED_BIRCH_LOG_SLAB,  Blocks.STRIPPED_BIRCH_LOG);
+        slab(ModBlocks.STRIPPED_BIRCH_WOOD_SLAB, Blocks.STRIPPED_BIRCH_WOOD);
+        slab(ModBlocks.BIRCH_LEAVES_SLAB,        Blocks.BIRCH_LEAVES);
+        slab(ModBlocks.SPRUCE_LOG_SLAB,           Blocks.SPRUCE_LOG);
+        slab(ModBlocks.SPRUCE_WOOD_SLAB,          Blocks.SPRUCE_WOOD);
+        slab(ModBlocks.STRIPPED_SPRUCE_LOG_SLAB,  Blocks.STRIPPED_SPRUCE_LOG);
+        slab(ModBlocks.STRIPPED_SPRUCE_WOOD_SLAB, Blocks.STRIPPED_SPRUCE_WOOD);
+        slab(ModBlocks.SPRUCE_LEAVES_SLAB,        Blocks.SPRUCE_LEAVES);
+        slab(ModBlocks.JUNGLE_LOG_SLAB,           Blocks.JUNGLE_LOG);
+        slab(ModBlocks.JUNGLE_WOOD_SLAB,          Blocks.JUNGLE_WOOD);
+        slab(ModBlocks.STRIPPED_JUNGLE_LOG_SLAB,  Blocks.STRIPPED_JUNGLE_LOG);
+        slab(ModBlocks.STRIPPED_JUNGLE_WOOD_SLAB, Blocks.STRIPPED_JUNGLE_WOOD);
+        slab(ModBlocks.JUNGLE_LEAVES_SLAB,        Blocks.JUNGLE_LEAVES);
+        slab(ModBlocks.ACACIA_LOG_SLAB,           Blocks.ACACIA_LOG);
+        slab(ModBlocks.ACACIA_WOOD_SLAB,          Blocks.ACACIA_WOOD);
+        slab(ModBlocks.STRIPPED_ACACIA_LOG_SLAB,  Blocks.STRIPPED_ACACIA_LOG);
+        slab(ModBlocks.STRIPPED_ACACIA_WOOD_SLAB, Blocks.STRIPPED_ACACIA_WOOD);
+        slab(ModBlocks.ACACIA_LEAVES_SLAB,        Blocks.ACACIA_LEAVES);
+        slab(ModBlocks.DARK_OAK_LOG_SLAB,           Blocks.DARK_OAK_LOG);
+        slab(ModBlocks.DARK_OAK_WOOD_SLAB,          Blocks.DARK_OAK_WOOD);
+        slab(ModBlocks.STRIPPED_DARK_OAK_LOG_SLAB,  Blocks.STRIPPED_DARK_OAK_LOG);
+        slab(ModBlocks.STRIPPED_DARK_OAK_WOOD_SLAB, Blocks.STRIPPED_DARK_OAK_WOOD);
+        slab(ModBlocks.DARK_OAK_LEAVES_SLAB,        Blocks.DARK_OAK_LEAVES);
+        slab(ModBlocks.CHERRY_LOG_SLAB,           Blocks.CHERRY_LOG);
+        slab(ModBlocks.CHERRY_WOOD_SLAB,          Blocks.CHERRY_WOOD);
+        slab(ModBlocks.STRIPPED_CHERRY_LOG_SLAB,  Blocks.STRIPPED_CHERRY_LOG);
+        slab(ModBlocks.STRIPPED_CHERRY_WOOD_SLAB, Blocks.STRIPPED_CHERRY_WOOD);
+        slab(ModBlocks.CHERRY_LEAVES_SLAB,        Blocks.CHERRY_LEAVES);
+        slab(ModBlocks.MANGROVE_LOG_SLAB,           Blocks.MANGROVE_LOG);
+        slab(ModBlocks.MANGROVE_WOOD_SLAB,          Blocks.MANGROVE_WOOD);
+        slab(ModBlocks.STRIPPED_MANGROVE_LOG_SLAB,  Blocks.STRIPPED_MANGROVE_LOG);
+        slab(ModBlocks.STRIPPED_MANGROVE_WOOD_SLAB, Blocks.STRIPPED_MANGROVE_WOOD);
+        slab(ModBlocks.MANGROVE_LEAVES_SLAB,        Blocks.MANGROVE_LEAVES);
+
+        // Misc
+        slab(ModBlocks.ANCIENT_DEBRIS_SLAB,       Blocks.ANCIENT_DEBRIS);
+        slab(ModBlocks.BOOKSHELF_SLAB,            Blocks.BOOKSHELF);
+        slab(ModBlocks.CHISELED_QUARTZ_BLOCK_SLAB, Blocks.CHISELED_QUARTZ_BLOCK);
+        slab(ModBlocks.CHISELED_RED_SANDSTONE_SLAB, Blocks.CHISELED_RED_SANDSTONE);
+        slab(ModBlocks.CHISELED_SANDSTONE_SLAB,   Blocks.CHISELED_SANDSTONE);
+        slab(ModBlocks.DEEPSLATE_SLAB,            Blocks.DEEPSLATE);
+        slab(ModBlocks.DRIED_KELP_BLOCK_SLAB,     Blocks.DRIED_KELP_BLOCK);
+        slab(ModBlocks.HAY_BLOCK_SLAB,            Blocks.HAY_BLOCK);
+        slab(ModBlocks.HONEY_BLOCK_SLAB,          Blocks.HONEY_BLOCK);
+        slab(ModBlocks.LADDER_SLAB,               Blocks.LADDER);
+        slab(ModBlocks.MELON_SLAB,                Blocks.MELON);
+        slab(ModBlocks.PUMPKIN_SLAB,              Blocks.PUMPKIN);
+        slab(ModBlocks.SCAFFOLDING_SLAB,          Blocks.SCAFFOLDING);
+        slab(ModBlocks.SCULK_CATALYST_SLAB,       Blocks.SCULK_CATALYST);
+        slab(ModBlocks.SLIME_BLOCK_SLAB,          Blocks.SLIME_BLOCK);
+        slab(ModBlocks.TNT_SLAB,                  Blocks.TNT);
+        slab(ModBlocks.TUFF_SLAB,                 Blocks.TUFF);
+
         // ── Stonecutter recipes (stone/mineral/ore/gem/metal/building blocks) ─
 
         // Mineral/gem blocks
@@ -416,6 +519,39 @@ public class NSVRecipeProvider extends RecipeProvider.Runner {
         stonecutter(ModBlocks.GREEN_TERRACOTTA_SLAB,      Blocks.GREEN_TERRACOTTA);
         stonecutter(ModBlocks.RED_TERRACOTTA_SLAB,        Blocks.RED_TERRACOTTA);
         stonecutter(ModBlocks.BLACK_TERRACOTTA_SLAB,      Blocks.BLACK_TERRACOTTA);
+
+        // Glazed terracotta
+        stonecutter(ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB,      Blocks.BLACK_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB,       Blocks.BLUE_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB,      Blocks.BROWN_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.CYAN_GLAZED_TERRACOTTA_SLAB,       Blocks.CYAN_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB,       Blocks.GRAY_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB,      Blocks.GREEN_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB, Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB, Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB,       Blocks.LIME_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB,    Blocks.MAGENTA_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB,     Blocks.ORANGE_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB,       Blocks.PINK_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB,     Blocks.PURPLE_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.RED_GLAZED_TERRACOTTA_SLAB,        Blocks.RED_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB,      Blocks.WHITE_GLAZED_TERRACOTTA);
+        stonecutter(ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB,     Blocks.YELLOW_GLAZED_TERRACOTTA);
+
+        // Waxed copper
+        stonecutter(ModBlocks.WAXED_COPPER_BLOCK_SLAB,   Blocks.WAXED_COPPER_BLOCK);
+        stonecutter(ModBlocks.WAXED_EXPOSED_COPPER_SLAB, Blocks.WAXED_EXPOSED_COPPER);
+        stonecutter(ModBlocks.WAXED_OXIDIZED_COPPER_SLAB,  Blocks.WAXED_OXIDIZED_COPPER);
+        stonecutter(ModBlocks.WAXED_WEATHERED_COPPER_SLAB, Blocks.WAXED_WEATHERED_COPPER);
+
+        // Misc (stone/mineral building blocks)
+        stonecutter(ModBlocks.ANCIENT_DEBRIS_SLAB,        Blocks.ANCIENT_DEBRIS);
+        stonecutter(ModBlocks.CHISELED_QUARTZ_BLOCK_SLAB, Blocks.CHISELED_QUARTZ_BLOCK);
+        stonecutter(ModBlocks.CHISELED_RED_SANDSTONE_SLAB, Blocks.CHISELED_RED_SANDSTONE);
+        stonecutter(ModBlocks.CHISELED_SANDSTONE_SLAB,    Blocks.CHISELED_SANDSTONE);
+        stonecutter(ModBlocks.DEEPSLATE_SLAB,             Blocks.DEEPSLATE);
+        stonecutter(ModBlocks.SCULK_CATALYST_SLAB,        Blocks.SCULK_CATALYST);
+        stonecutter(ModBlocks.TUFF_SLAB,                  Blocks.TUFF);
       }
 
       private void slab(Block slab, Block source) {

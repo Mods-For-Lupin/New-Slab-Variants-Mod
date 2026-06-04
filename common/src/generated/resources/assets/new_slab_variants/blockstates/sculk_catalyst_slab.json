@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "new_slab_variants:block/sculk_catalyst_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/sculk_catalyst"
+    },
+    "type=top": {
+      "model": "new_slab_variants:block/sculk_catalyst_slab_top"
+    }
+  }
+}

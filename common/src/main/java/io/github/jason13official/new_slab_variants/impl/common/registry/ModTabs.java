@@ -269,6 +269,109 @@ public class ModTabs {
           output.accept(ModItems.GREEN_TERRACOTTA_SLAB);
           output.accept(ModItems.RED_TERRACOTTA_SLAB);
           output.accept(ModItems.BLACK_TERRACOTTA_SLAB);
+
+          // Glazed terracotta
+          output.accept(ModItems.BLACK_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.BLUE_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.BROWN_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.CYAN_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.GRAY_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.GREEN_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.LIME_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.MAGENTA_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.ORANGE_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.PINK_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.PURPLE_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.RED_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.WHITE_GLAZED_TERRACOTTA_SLAB);
+          output.accept(ModItems.YELLOW_GLAZED_TERRACOTTA_SLAB);
+
+          // Infested blocks
+          output.accept(ModItems.INFESTED_STONE_SLAB);
+          output.accept(ModItems.INFESTED_COBBLESTONE_SLAB);
+          output.accept(ModItems.INFESTED_STONE_BRICKS_SLAB);
+          output.accept(ModItems.INFESTED_CRACKED_STONE_BRICKS_SLAB);
+          output.accept(ModItems.INFESTED_CHISELED_STONE_BRICKS_SLAB);
+          output.accept(ModItems.INFESTED_MOSSY_STONE_BRICKS_SLAB);
+          output.accept(ModItems.INFESTED_DEEPSLATE_SLAB);
+
+          // Waxed copper
+          output.accept(ModItems.WAXED_COPPER_BLOCK_SLAB);
+          output.accept(ModItems.WAXED_EXPOSED_COPPER_SLAB);
+          output.accept(ModItems.WAXED_OXIDIZED_COPPER_SLAB);
+          output.accept(ModItems.WAXED_WEATHERED_COPPER_SLAB);
+
+          // Froglights
+          output.accept(ModItems.OCHRE_FROGLIGHT_SLAB);
+          output.accept(ModItems.PEARLESCENT_FROGLIGHT_SLAB);
+          output.accept(ModItems.VERDANT_FROGLIGHT_SLAB);
+
+          // Nylium
+          output.accept(ModItems.CRIMSON_NYLIUM_SLAB);
+          output.accept(ModItems.WARPED_NYLIUM_SLAB);
+
+          // Wood logs/wood/leaves
+          output.accept(ModItems.OAK_LOG_SLAB);
+          output.accept(ModItems.OAK_WOOD_SLAB);
+          output.accept(ModItems.STRIPPED_OAK_LOG_SLAB);
+          output.accept(ModItems.STRIPPED_OAK_WOOD_SLAB);
+          output.accept(ModItems.OAK_LEAVES_SLAB);
+          output.accept(ModItems.BIRCH_LOG_SLAB);
+          output.accept(ModItems.BIRCH_WOOD_SLAB);
+          output.accept(ModItems.STRIPPED_BIRCH_LOG_SLAB);
+          output.accept(ModItems.STRIPPED_BIRCH_WOOD_SLAB);
+          output.accept(ModItems.BIRCH_LEAVES_SLAB);
+          output.accept(ModItems.SPRUCE_LOG_SLAB);
+          output.accept(ModItems.SPRUCE_WOOD_SLAB);
+          output.accept(ModItems.STRIPPED_SPRUCE_LOG_SLAB);
+          output.accept(ModItems.STRIPPED_SPRUCE_WOOD_SLAB);
+          output.accept(ModItems.SPRUCE_LEAVES_SLAB);
+          output.accept(ModItems.JUNGLE_LOG_SLAB);
+          output.accept(ModItems.JUNGLE_WOOD_SLAB);
+          output.accept(ModItems.STRIPPED_JUNGLE_LOG_SLAB);
+          output.accept(ModItems.STRIPPED_JUNGLE_WOOD_SLAB);
+          output.accept(ModItems.JUNGLE_LEAVES_SLAB);
+          output.accept(ModItems.ACACIA_LOG_SLAB);
+          output.accept(ModItems.ACACIA_WOOD_SLAB);
+          output.accept(ModItems.STRIPPED_ACACIA_LOG_SLAB);
+          output.accept(ModItems.STRIPPED_ACACIA_WOOD_SLAB);
+          output.accept(ModItems.ACACIA_LEAVES_SLAB);
+          output.accept(ModItems.DARK_OAK_LOG_SLAB);
+          output.accept(ModItems.DARK_OAK_WOOD_SLAB);
+          output.accept(ModItems.STRIPPED_DARK_OAK_LOG_SLAB);
+          output.accept(ModItems.STRIPPED_DARK_OAK_WOOD_SLAB);
+          output.accept(ModItems.DARK_OAK_LEAVES_SLAB);
+          output.accept(ModItems.CHERRY_LOG_SLAB);
+          output.accept(ModItems.CHERRY_WOOD_SLAB);
+          output.accept(ModItems.STRIPPED_CHERRY_LOG_SLAB);
+          output.accept(ModItems.STRIPPED_CHERRY_WOOD_SLAB);
+          output.accept(ModItems.CHERRY_LEAVES_SLAB);
+          output.accept(ModItems.MANGROVE_LOG_SLAB);
+          output.accept(ModItems.MANGROVE_WOOD_SLAB);
+          output.accept(ModItems.STRIPPED_MANGROVE_LOG_SLAB);
+          output.accept(ModItems.STRIPPED_MANGROVE_WOOD_SLAB);
+          output.accept(ModItems.MANGROVE_LEAVES_SLAB);
+
+          // Misc
+          output.accept(ModItems.ANCIENT_DEBRIS_SLAB);
+          output.accept(ModItems.BOOKSHELF_SLAB);
+          output.accept(ModItems.CHISELED_QUARTZ_BLOCK_SLAB);
+          output.accept(ModItems.CHISELED_RED_SANDSTONE_SLAB);
+          output.accept(ModItems.CHISELED_SANDSTONE_SLAB);
+          output.accept(ModItems.DEEPSLATE_SLAB);
+          output.accept(ModItems.DRIED_KELP_BLOCK_SLAB);
+          output.accept(ModItems.HAY_BLOCK_SLAB);
+          output.accept(ModItems.HONEY_BLOCK_SLAB);
+          output.accept(ModItems.LADDER_SLAB);
+          output.accept(ModItems.MELON_SLAB);
+          output.accept(ModItems.PUMPKIN_SLAB);
+          output.accept(ModItems.SCAFFOLDING_SLAB);
+          output.accept(ModItems.SCULK_CATALYST_SLAB);
+          output.accept(ModItems.SLIME_BLOCK_SLAB);
+          output.accept(ModItems.TNT_SLAB);
+          output.accept(ModItems.TUFF_SLAB);
         }).build();
     consumer.accept(NEW_SLAB_VARIANTS, NewSlabVariants.id(Constants.MOD_ID));
   }

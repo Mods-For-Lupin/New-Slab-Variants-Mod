@@ -6,6 +6,17 @@
     "new_slab_variants:warped_wart_block_slab",
     "new_slab_variants:shroomlight_slab",
     "new_slab_variants:azalea_leaves_slab",
-    "new_slab_variants:flowering_azalea_leaves_slab"
+    "new_slab_variants:flowering_azalea_leaves_slab",
+    "new_slab_variants:oak_leaves_slab",
+    "new_slab_variants:birch_leaves_slab",
+    "new_slab_variants:spruce_leaves_slab",
+    "new_slab_variants:jungle_leaves_slab",
+    "new_slab_variants:acacia_leaves_slab",
+    "new_slab_variants:dark_oak_leaves_slab",
+    "new_slab_variants:cherry_leaves_slab",
+    "new_slab_variants:mangrove_leaves_slab",
+    "new_slab_variants:hay_block_slab",
+    "new_slab_variants:crimson_nylium_slab",
+    "new_slab_variants:warped_nylium_slab"
   ]
 }

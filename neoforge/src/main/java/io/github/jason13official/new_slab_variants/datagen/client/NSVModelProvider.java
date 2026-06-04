@@ -165,7 +165,43 @@ public class NSVModelProvider extends ModelProvider {
         ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB, ModBlocks.CYAN_TERRACOTTA_SLAB,
         ModBlocks.PURPLE_TERRACOTTA_SLAB, ModBlocks.BLUE_TERRACOTTA_SLAB,
         ModBlocks.BROWN_TERRACOTTA_SLAB, ModBlocks.GREEN_TERRACOTTA_SLAB,
-        ModBlocks.RED_TERRACOTTA_SLAB, ModBlocks.BLACK_TERRACOTTA_SLAB
+        ModBlocks.RED_TERRACOTTA_SLAB, ModBlocks.BLACK_TERRACOTTA_SLAB,
+        // Glazed terracotta
+        ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB, ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB,
+        ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB, ModBlocks.CYAN_GLAZED_TERRACOTTA_SLAB,
+        ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB, ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB,
+        ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB, ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB,
+        ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB, ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB,
+        ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB, ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB,
+        ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB, ModBlocks.RED_GLAZED_TERRACOTTA_SLAB,
+        ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB, ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB,
+        // Infested blocks
+        ModBlocks.INFESTED_STONE_SLAB, ModBlocks.INFESTED_COBBLESTONE_SLAB,
+        ModBlocks.INFESTED_STONE_BRICKS_SLAB, ModBlocks.INFESTED_CRACKED_STONE_BRICKS_SLAB,
+        ModBlocks.INFESTED_CHISELED_STONE_BRICKS_SLAB, ModBlocks.INFESTED_MOSSY_STONE_BRICKS_SLAB,
+        ModBlocks.INFESTED_DEEPSLATE_SLAB,
+        // Waxed copper
+        ModBlocks.WAXED_COPPER_BLOCK_SLAB, ModBlocks.WAXED_EXPOSED_COPPER_SLAB,
+        ModBlocks.WAXED_OXIDIZED_COPPER_SLAB, ModBlocks.WAXED_WEATHERED_COPPER_SLAB,
+        // Froglights
+        ModBlocks.OCHRE_FROGLIGHT_SLAB, ModBlocks.PEARLESCENT_FROGLIGHT_SLAB, ModBlocks.VERDANT_FROGLIGHT_SLAB,
+        // Nylium
+        ModBlocks.CRIMSON_NYLIUM_SLAB, ModBlocks.WARPED_NYLIUM_SLAB,
+        // Wood logs/wood/leaves
+        ModBlocks.OAK_LOG_SLAB, ModBlocks.OAK_WOOD_SLAB, ModBlocks.STRIPPED_OAK_LOG_SLAB, ModBlocks.STRIPPED_OAK_WOOD_SLAB, ModBlocks.OAK_LEAVES_SLAB,
+        ModBlocks.BIRCH_LOG_SLAB, ModBlocks.BIRCH_WOOD_SLAB, ModBlocks.STRIPPED_BIRCH_LOG_SLAB, ModBlocks.STRIPPED_BIRCH_WOOD_SLAB, ModBlocks.BIRCH_LEAVES_SLAB,
+        ModBlocks.SPRUCE_LOG_SLAB, ModBlocks.SPRUCE_WOOD_SLAB, ModBlocks.STRIPPED_SPRUCE_LOG_SLAB, ModBlocks.STRIPPED_SPRUCE_WOOD_SLAB, ModBlocks.SPRUCE_LEAVES_SLAB,
+        ModBlocks.JUNGLE_LOG_SLAB, ModBlocks.JUNGLE_WOOD_SLAB, ModBlocks.STRIPPED_JUNGLE_LOG_SLAB, ModBlocks.STRIPPED_JUNGLE_WOOD_SLAB, ModBlocks.JUNGLE_LEAVES_SLAB,
+        ModBlocks.ACACIA_LOG_SLAB, ModBlocks.ACACIA_WOOD_SLAB, ModBlocks.STRIPPED_ACACIA_LOG_SLAB, ModBlocks.STRIPPED_ACACIA_WOOD_SLAB, ModBlocks.ACACIA_LEAVES_SLAB,
+        ModBlocks.DARK_OAK_LOG_SLAB, ModBlocks.DARK_OAK_WOOD_SLAB, ModBlocks.STRIPPED_DARK_OAK_LOG_SLAB, ModBlocks.STRIPPED_DARK_OAK_WOOD_SLAB, ModBlocks.DARK_OAK_LEAVES_SLAB,
+        ModBlocks.CHERRY_LOG_SLAB, ModBlocks.CHERRY_WOOD_SLAB, ModBlocks.STRIPPED_CHERRY_LOG_SLAB, ModBlocks.STRIPPED_CHERRY_WOOD_SLAB, ModBlocks.CHERRY_LEAVES_SLAB,
+        ModBlocks.MANGROVE_LOG_SLAB, ModBlocks.MANGROVE_WOOD_SLAB, ModBlocks.STRIPPED_MANGROVE_LOG_SLAB, ModBlocks.STRIPPED_MANGROVE_WOOD_SLAB, ModBlocks.MANGROVE_LEAVES_SLAB,
+        // Misc
+        ModBlocks.ANCIENT_DEBRIS_SLAB, ModBlocks.BOOKSHELF_SLAB, ModBlocks.CHISELED_QUARTZ_BLOCK_SLAB,
+        ModBlocks.CHISELED_RED_SANDSTONE_SLAB, ModBlocks.CHISELED_SANDSTONE_SLAB, ModBlocks.DEEPSLATE_SLAB,
+        ModBlocks.DRIED_KELP_BLOCK_SLAB, ModBlocks.HAY_BLOCK_SLAB, ModBlocks.HONEY_BLOCK_SLAB,
+        ModBlocks.LADDER_SLAB, ModBlocks.MELON_SLAB, ModBlocks.PUMPKIN_SLAB, ModBlocks.SCAFFOLDING_SLAB,
+        ModBlocks.SCULK_CATALYST_SLAB, ModBlocks.SLIME_BLOCK_SLAB, ModBlocks.TNT_SLAB, ModBlocks.TUFF_SLAB
     ).map(Block::builtInRegistryHolder);
   }
 
@@ -282,7 +318,43 @@ public class NSVModelProvider extends ModelProvider {
         ModItems.LIGHT_GRAY_TERRACOTTA_SLAB, ModItems.CYAN_TERRACOTTA_SLAB,
         ModItems.PURPLE_TERRACOTTA_SLAB, ModItems.BLUE_TERRACOTTA_SLAB,
         ModItems.BROWN_TERRACOTTA_SLAB, ModItems.GREEN_TERRACOTTA_SLAB,
-        ModItems.RED_TERRACOTTA_SLAB, ModItems.BLACK_TERRACOTTA_SLAB
+        ModItems.RED_TERRACOTTA_SLAB, ModItems.BLACK_TERRACOTTA_SLAB,
+        // Glazed terracotta
+        ModItems.BLACK_GLAZED_TERRACOTTA_SLAB, ModItems.BLUE_GLAZED_TERRACOTTA_SLAB,
+        ModItems.BROWN_GLAZED_TERRACOTTA_SLAB, ModItems.CYAN_GLAZED_TERRACOTTA_SLAB,
+        ModItems.GRAY_GLAZED_TERRACOTTA_SLAB, ModItems.GREEN_GLAZED_TERRACOTTA_SLAB,
+        ModItems.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB, ModItems.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB,
+        ModItems.LIME_GLAZED_TERRACOTTA_SLAB, ModItems.MAGENTA_GLAZED_TERRACOTTA_SLAB,
+        ModItems.ORANGE_GLAZED_TERRACOTTA_SLAB, ModItems.PINK_GLAZED_TERRACOTTA_SLAB,
+        ModItems.PURPLE_GLAZED_TERRACOTTA_SLAB, ModItems.RED_GLAZED_TERRACOTTA_SLAB,
+        ModItems.WHITE_GLAZED_TERRACOTTA_SLAB, ModItems.YELLOW_GLAZED_TERRACOTTA_SLAB,
+        // Infested blocks
+        ModItems.INFESTED_STONE_SLAB, ModItems.INFESTED_COBBLESTONE_SLAB,
+        ModItems.INFESTED_STONE_BRICKS_SLAB, ModItems.INFESTED_CRACKED_STONE_BRICKS_SLAB,
+        ModItems.INFESTED_CHISELED_STONE_BRICKS_SLAB, ModItems.INFESTED_MOSSY_STONE_BRICKS_SLAB,
+        ModItems.INFESTED_DEEPSLATE_SLAB,
+        // Waxed copper
+        ModItems.WAXED_COPPER_BLOCK_SLAB, ModItems.WAXED_EXPOSED_COPPER_SLAB,
+        ModItems.WAXED_OXIDIZED_COPPER_SLAB, ModItems.WAXED_WEATHERED_COPPER_SLAB,
+        // Froglights
+        ModItems.OCHRE_FROGLIGHT_SLAB, ModItems.PEARLESCENT_FROGLIGHT_SLAB, ModItems.VERDANT_FROGLIGHT_SLAB,
+        // Nylium
+        ModItems.CRIMSON_NYLIUM_SLAB, ModItems.WARPED_NYLIUM_SLAB,
+        // Wood logs/wood/leaves
+        ModItems.OAK_LOG_SLAB, ModItems.OAK_WOOD_SLAB, ModItems.STRIPPED_OAK_LOG_SLAB, ModItems.STRIPPED_OAK_WOOD_SLAB, ModItems.OAK_LEAVES_SLAB,
+        ModItems.BIRCH_LOG_SLAB, ModItems.BIRCH_WOOD_SLAB, ModItems.STRIPPED_BIRCH_LOG_SLAB, ModItems.STRIPPED_BIRCH_WOOD_SLAB, ModItems.BIRCH_LEAVES_SLAB,
+        ModItems.SPRUCE_LOG_SLAB, ModItems.SPRUCE_WOOD_SLAB, ModItems.STRIPPED_SPRUCE_LOG_SLAB, ModItems.STRIPPED_SPRUCE_WOOD_SLAB, ModItems.SPRUCE_LEAVES_SLAB,
+        ModItems.JUNGLE_LOG_SLAB, ModItems.JUNGLE_WOOD_SLAB, ModItems.STRIPPED_JUNGLE_LOG_SLAB, ModItems.STRIPPED_JUNGLE_WOOD_SLAB, ModItems.JUNGLE_LEAVES_SLAB,
+        ModItems.ACACIA_LOG_SLAB, ModItems.ACACIA_WOOD_SLAB, ModItems.STRIPPED_ACACIA_LOG_SLAB, ModItems.STRIPPED_ACACIA_WOOD_SLAB, ModItems.ACACIA_LEAVES_SLAB,
+        ModItems.DARK_OAK_LOG_SLAB, ModItems.DARK_OAK_WOOD_SLAB, ModItems.STRIPPED_DARK_OAK_LOG_SLAB, ModItems.STRIPPED_DARK_OAK_WOOD_SLAB, ModItems.DARK_OAK_LEAVES_SLAB,
+        ModItems.CHERRY_LOG_SLAB, ModItems.CHERRY_WOOD_SLAB, ModItems.STRIPPED_CHERRY_LOG_SLAB, ModItems.STRIPPED_CHERRY_WOOD_SLAB, ModItems.CHERRY_LEAVES_SLAB,
+        ModItems.MANGROVE_LOG_SLAB, ModItems.MANGROVE_WOOD_SLAB, ModItems.STRIPPED_MANGROVE_LOG_SLAB, ModItems.STRIPPED_MANGROVE_WOOD_SLAB, ModItems.MANGROVE_LEAVES_SLAB,
+        // Misc
+        ModItems.ANCIENT_DEBRIS_SLAB, ModItems.BOOKSHELF_SLAB, ModItems.CHISELED_QUARTZ_BLOCK_SLAB,
+        ModItems.CHISELED_RED_SANDSTONE_SLAB, ModItems.CHISELED_SANDSTONE_SLAB, ModItems.DEEPSLATE_SLAB,
+        ModItems.DRIED_KELP_BLOCK_SLAB, ModItems.HAY_BLOCK_SLAB, ModItems.HONEY_BLOCK_SLAB,
+        ModItems.LADDER_SLAB, ModItems.MELON_SLAB, ModItems.PUMPKIN_SLAB, ModItems.SCAFFOLDING_SLAB,
+        ModItems.SCULK_CATALYST_SLAB, ModItems.SLIME_BLOCK_SLAB, ModItems.TNT_SLAB, ModItems.TUFF_SLAB
     ).map(Item::builtInRegistryHolder);
   }
 
@@ -541,6 +613,123 @@ public class NSVModelProvider extends ModelProvider {
     cubeSlab(bg, ModBlocks.GREEN_TERRACOTTA_SLAB,      Blocks.GREEN_TERRACOTTA);
     cubeSlab(bg, ModBlocks.RED_TERRACOTTA_SLAB,        Blocks.RED_TERRACOTTA);
     cubeSlab(bg, ModBlocks.BLACK_TERRACOTTA_SLAB,      Blocks.BLACK_TERRACOTTA);
+
+    // Glazed terracotta — texture name matches registry name exactly
+    cubeSlab(bg, ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB,      Blocks.BLACK_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB,       Blocks.BLUE_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB,      Blocks.BROWN_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.CYAN_GLAZED_TERRACOTTA_SLAB,       Blocks.CYAN_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB,       Blocks.GRAY_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB,      Blocks.GREEN_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB, Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB, Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB,       Blocks.LIME_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB,    Blocks.MAGENTA_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB,     Blocks.ORANGE_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB,       Blocks.PINK_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB,     Blocks.PURPLE_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.RED_GLAZED_TERRACOTTA_SLAB,        Blocks.RED_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB,      Blocks.WHITE_GLAZED_TERRACOTTA);
+    cubeSlab(bg, ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB,     Blocks.YELLOW_GLAZED_TERRACOTTA);
+
+    // Infested blocks — texture matches non-infested counterpart
+    cubeSlab(bg, ModBlocks.INFESTED_STONE_SLAB,                tex(Blocks.STONE),                 ModelLocationUtils.getModelLocation(Blocks.INFESTED_STONE));
+    cubeSlab(bg, ModBlocks.INFESTED_COBBLESTONE_SLAB,          tex(Blocks.COBBLESTONE),           ModelLocationUtils.getModelLocation(Blocks.INFESTED_COBBLESTONE));
+    cubeSlab(bg, ModBlocks.INFESTED_STONE_BRICKS_SLAB,         tex(Blocks.STONE_BRICKS),          ModelLocationUtils.getModelLocation(Blocks.INFESTED_STONE_BRICKS));
+    cubeSlab(bg, ModBlocks.INFESTED_CRACKED_STONE_BRICKS_SLAB, tex(Blocks.CRACKED_STONE_BRICKS),  ModelLocationUtils.getModelLocation(Blocks.INFESTED_CRACKED_STONE_BRICKS));
+    cubeSlab(bg, ModBlocks.INFESTED_CHISELED_STONE_BRICKS_SLAB, tex(Blocks.CHISELED_STONE_BRICKS), ModelLocationUtils.getModelLocation(Blocks.INFESTED_CHISELED_STONE_BRICKS));
+    cubeSlab(bg, ModBlocks.INFESTED_MOSSY_STONE_BRICKS_SLAB,   tex(Blocks.MOSSY_STONE_BRICKS),    ModelLocationUtils.getModelLocation(Blocks.INFESTED_MOSSY_STONE_BRICKS));
+    columnSlab(bg, ModBlocks.INFESTED_DEEPSLATE_SLAB,          tex(Blocks.DEEPSLATE, "_side"), tex(Blocks.DEEPSLATE, "_top"), Blocks.INFESTED_DEEPSLATE);
+
+    // Waxed copper — texture matches non-waxed
+    cubeSlab(bg, ModBlocks.WAXED_COPPER_BLOCK_SLAB,   tex(Blocks.COPPER_BLOCK),   ModelLocationUtils.getModelLocation(Blocks.WAXED_COPPER_BLOCK));
+    cubeSlab(bg, ModBlocks.WAXED_EXPOSED_COPPER_SLAB, tex(Blocks.EXPOSED_COPPER), ModelLocationUtils.getModelLocation(Blocks.WAXED_EXPOSED_COPPER));
+    cubeSlab(bg, ModBlocks.WAXED_OXIDIZED_COPPER_SLAB,  tex(Blocks.OXIDIZED_COPPER),  ModelLocationUtils.getModelLocation(Blocks.WAXED_OXIDIZED_COPPER));
+    cubeSlab(bg, ModBlocks.WAXED_WEATHERED_COPPER_SLAB, tex(Blocks.WEATHERED_COPPER), ModelLocationUtils.getModelLocation(Blocks.WAXED_WEATHERED_COPPER));
+
+    // Froglights — RotatedPillarBlock; column model side/top
+    columnSlab(bg, ModBlocks.OCHRE_FROGLIGHT_SLAB,       tex(Blocks.OCHRE_FROGLIGHT,       "_side"), tex(Blocks.OCHRE_FROGLIGHT,       "_top"), Blocks.OCHRE_FROGLIGHT);
+    columnSlab(bg, ModBlocks.PEARLESCENT_FROGLIGHT_SLAB, tex(Blocks.PEARLESCENT_FROGLIGHT, "_side"), tex(Blocks.PEARLESCENT_FROGLIGHT, "_top"), Blocks.PEARLESCENT_FROGLIGHT);
+    columnSlab(bg, ModBlocks.VERDANT_FROGLIGHT_SLAB,     tex(Blocks.VERDANT_FROGLIGHT,     "_side"), tex(Blocks.VERDANT_FROGLIGHT,     "_top"), Blocks.VERDANT_FROGLIGHT);
+
+    // Nylium — top=nylium, side=nylium_side, bottom=netherrack
+    nyliumSlab(bg, ModBlocks.CRIMSON_NYLIUM_SLAB, tex(Blocks.CRIMSON_NYLIUM), tex(Blocks.CRIMSON_NYLIUM, "_side"), Blocks.CRIMSON_NYLIUM);
+    nyliumSlab(bg, ModBlocks.WARPED_NYLIUM_SLAB,  tex(Blocks.WARPED_NYLIUM),  tex(Blocks.WARPED_NYLIUM,  "_side"), Blocks.WARPED_NYLIUM);
+
+    // Logs — column (side=log, top=log_top)
+    columnSlab(bg, ModBlocks.OAK_LOG_SLAB,            tex(Blocks.OAK_LOG),            tex(Blocks.OAK_LOG,            "_top"), Blocks.OAK_LOG);
+    columnSlab(bg, ModBlocks.BIRCH_LOG_SLAB,          tex(Blocks.BIRCH_LOG),          tex(Blocks.BIRCH_LOG,          "_top"), Blocks.BIRCH_LOG);
+    columnSlab(bg, ModBlocks.SPRUCE_LOG_SLAB,         tex(Blocks.SPRUCE_LOG),         tex(Blocks.SPRUCE_LOG,         "_top"), Blocks.SPRUCE_LOG);
+    columnSlab(bg, ModBlocks.JUNGLE_LOG_SLAB,         tex(Blocks.JUNGLE_LOG),         tex(Blocks.JUNGLE_LOG,         "_top"), Blocks.JUNGLE_LOG);
+    columnSlab(bg, ModBlocks.ACACIA_LOG_SLAB,         tex(Blocks.ACACIA_LOG),         tex(Blocks.ACACIA_LOG,         "_top"), Blocks.ACACIA_LOG);
+    columnSlab(bg, ModBlocks.DARK_OAK_LOG_SLAB,       tex(Blocks.DARK_OAK_LOG),       tex(Blocks.DARK_OAK_LOG,       "_top"), Blocks.DARK_OAK_LOG);
+    columnSlab(bg, ModBlocks.CHERRY_LOG_SLAB,         tex(Blocks.CHERRY_LOG),         tex(Blocks.CHERRY_LOG,         "_top"), Blocks.CHERRY_LOG);
+    columnSlab(bg, ModBlocks.MANGROVE_LOG_SLAB,       tex(Blocks.MANGROVE_LOG),       tex(Blocks.MANGROVE_LOG,       "_top"), Blocks.MANGROVE_LOG);
+
+    // Stripped logs
+    columnSlab(bg, ModBlocks.STRIPPED_OAK_LOG_SLAB,      tex(Blocks.STRIPPED_OAK_LOG),      tex(Blocks.STRIPPED_OAK_LOG,      "_top"), Blocks.STRIPPED_OAK_LOG);
+    columnSlab(bg, ModBlocks.STRIPPED_BIRCH_LOG_SLAB,    tex(Blocks.STRIPPED_BIRCH_LOG),    tex(Blocks.STRIPPED_BIRCH_LOG,    "_top"), Blocks.STRIPPED_BIRCH_LOG);
+    columnSlab(bg, ModBlocks.STRIPPED_SPRUCE_LOG_SLAB,   tex(Blocks.STRIPPED_SPRUCE_LOG),   tex(Blocks.STRIPPED_SPRUCE_LOG,   "_top"), Blocks.STRIPPED_SPRUCE_LOG);
+    columnSlab(bg, ModBlocks.STRIPPED_JUNGLE_LOG_SLAB,   tex(Blocks.STRIPPED_JUNGLE_LOG),   tex(Blocks.STRIPPED_JUNGLE_LOG,   "_top"), Blocks.STRIPPED_JUNGLE_LOG);
+    columnSlab(bg, ModBlocks.STRIPPED_ACACIA_LOG_SLAB,   tex(Blocks.STRIPPED_ACACIA_LOG),   tex(Blocks.STRIPPED_ACACIA_LOG,   "_top"), Blocks.STRIPPED_ACACIA_LOG);
+    columnSlab(bg, ModBlocks.STRIPPED_DARK_OAK_LOG_SLAB, tex(Blocks.STRIPPED_DARK_OAK_LOG), tex(Blocks.STRIPPED_DARK_OAK_LOG, "_top"), Blocks.STRIPPED_DARK_OAK_LOG);
+    columnSlab(bg, ModBlocks.STRIPPED_CHERRY_LOG_SLAB,   tex(Blocks.STRIPPED_CHERRY_LOG),   tex(Blocks.STRIPPED_CHERRY_LOG,   "_top"), Blocks.STRIPPED_CHERRY_LOG);
+    columnSlab(bg, ModBlocks.STRIPPED_MANGROVE_LOG_SLAB, tex(Blocks.STRIPPED_MANGROVE_LOG), tex(Blocks.STRIPPED_MANGROVE_LOG, "_top"), Blocks.STRIPPED_MANGROVE_LOG);
+
+    // Wood — all-bark (cube_all using log side texture)
+    cubeSlab(bg, ModBlocks.OAK_WOOD_SLAB,             tex(Blocks.OAK_LOG),             ModelLocationUtils.getModelLocation(Blocks.OAK_WOOD));
+    cubeSlab(bg, ModBlocks.BIRCH_WOOD_SLAB,           tex(Blocks.BIRCH_LOG),           ModelLocationUtils.getModelLocation(Blocks.BIRCH_WOOD));
+    cubeSlab(bg, ModBlocks.SPRUCE_WOOD_SLAB,          tex(Blocks.SPRUCE_LOG),          ModelLocationUtils.getModelLocation(Blocks.SPRUCE_WOOD));
+    cubeSlab(bg, ModBlocks.JUNGLE_WOOD_SLAB,          tex(Blocks.JUNGLE_LOG),          ModelLocationUtils.getModelLocation(Blocks.JUNGLE_WOOD));
+    cubeSlab(bg, ModBlocks.ACACIA_WOOD_SLAB,          tex(Blocks.ACACIA_LOG),          ModelLocationUtils.getModelLocation(Blocks.ACACIA_WOOD));
+    cubeSlab(bg, ModBlocks.DARK_OAK_WOOD_SLAB,        tex(Blocks.DARK_OAK_LOG),        ModelLocationUtils.getModelLocation(Blocks.DARK_OAK_WOOD));
+    cubeSlab(bg, ModBlocks.CHERRY_WOOD_SLAB,          tex(Blocks.CHERRY_LOG),          ModelLocationUtils.getModelLocation(Blocks.CHERRY_WOOD));
+    cubeSlab(bg, ModBlocks.MANGROVE_WOOD_SLAB,        tex(Blocks.MANGROVE_LOG),        ModelLocationUtils.getModelLocation(Blocks.MANGROVE_WOOD));
+
+    // Stripped wood — all-bark (cube_all using stripped log side texture)
+    cubeSlab(bg, ModBlocks.STRIPPED_OAK_WOOD_SLAB,      tex(Blocks.STRIPPED_OAK_LOG),      ModelLocationUtils.getModelLocation(Blocks.STRIPPED_OAK_WOOD));
+    cubeSlab(bg, ModBlocks.STRIPPED_BIRCH_WOOD_SLAB,    tex(Blocks.STRIPPED_BIRCH_LOG),    ModelLocationUtils.getModelLocation(Blocks.STRIPPED_BIRCH_WOOD));
+    cubeSlab(bg, ModBlocks.STRIPPED_SPRUCE_WOOD_SLAB,   tex(Blocks.STRIPPED_SPRUCE_LOG),   ModelLocationUtils.getModelLocation(Blocks.STRIPPED_SPRUCE_WOOD));
+    cubeSlab(bg, ModBlocks.STRIPPED_JUNGLE_WOOD_SLAB,   tex(Blocks.STRIPPED_JUNGLE_LOG),   ModelLocationUtils.getModelLocation(Blocks.STRIPPED_JUNGLE_WOOD));
+    cubeSlab(bg, ModBlocks.STRIPPED_ACACIA_WOOD_SLAB,   tex(Blocks.STRIPPED_ACACIA_LOG),   ModelLocationUtils.getModelLocation(Blocks.STRIPPED_ACACIA_WOOD));
+    cubeSlab(bg, ModBlocks.STRIPPED_DARK_OAK_WOOD_SLAB, tex(Blocks.STRIPPED_DARK_OAK_LOG), ModelLocationUtils.getModelLocation(Blocks.STRIPPED_DARK_OAK_WOOD));
+    cubeSlab(bg, ModBlocks.STRIPPED_CHERRY_WOOD_SLAB,   tex(Blocks.STRIPPED_CHERRY_LOG),   ModelLocationUtils.getModelLocation(Blocks.STRIPPED_CHERRY_WOOD));
+    cubeSlab(bg, ModBlocks.STRIPPED_MANGROVE_WOOD_SLAB, tex(Blocks.STRIPPED_MANGROVE_LOG), ModelLocationUtils.getModelLocation(Blocks.STRIPPED_MANGROVE_WOOD));
+
+    // Leaves — cube_all
+    cubeSlab(bg, ModBlocks.OAK_LEAVES_SLAB,      Blocks.OAK_LEAVES);
+    cubeSlab(bg, ModBlocks.BIRCH_LEAVES_SLAB,    Blocks.BIRCH_LEAVES);
+    cubeSlab(bg, ModBlocks.SPRUCE_LEAVES_SLAB,   Blocks.SPRUCE_LEAVES);
+    cubeSlab(bg, ModBlocks.JUNGLE_LEAVES_SLAB,   Blocks.JUNGLE_LEAVES);
+    cubeSlab(bg, ModBlocks.ACACIA_LEAVES_SLAB,   Blocks.ACACIA_LEAVES);
+    cubeSlab(bg, ModBlocks.DARK_OAK_LEAVES_SLAB, Blocks.DARK_OAK_LEAVES);
+    cubeSlab(bg, ModBlocks.CHERRY_LEAVES_SLAB,   Blocks.CHERRY_LEAVES);
+    cubeSlab(bg, ModBlocks.MANGROVE_LEAVES_SLAB, Blocks.MANGROVE_LEAVES);
+
+    // Misc
+    columnSlab(bg, ModBlocks.ANCIENT_DEBRIS_SLAB,      tex(Blocks.ANCIENT_DEBRIS, "_side"), tex(Blocks.ANCIENT_DEBRIS, "_top"), Blocks.ANCIENT_DEBRIS);
+    columnSlab(bg, ModBlocks.BOOKSHELF_SLAB,           tex(Blocks.BOOKSHELF),               tex(Blocks.OAK_PLANKS),             Blocks.BOOKSHELF);
+    columnSlab(bg, ModBlocks.CHISELED_QUARTZ_BLOCK_SLAB, tex(Blocks.CHISELED_QUARTZ_BLOCK), tex(Blocks.CHISELED_QUARTZ_BLOCK, "_top"), Blocks.CHISELED_QUARTZ_BLOCK);
+    cubeSlab(bg, ModBlocks.CHISELED_RED_SANDSTONE_SLAB, Blocks.CHISELED_RED_SANDSTONE);
+    cubeSlab(bg, ModBlocks.CHISELED_SANDSTONE_SLAB,    Blocks.CHISELED_SANDSTONE);
+    columnSlab(bg, ModBlocks.DEEPSLATE_SLAB,           tex(Blocks.DEEPSLATE, "_side"), tex(Blocks.DEEPSLATE, "_top"), Blocks.DEEPSLATE);
+    columnSlab(bg, ModBlocks.DRIED_KELP_BLOCK_SLAB,   tex(Blocks.DRIED_KELP_BLOCK, "_side"), tex(Blocks.DRIED_KELP_BLOCK, "_top"), Blocks.DRIED_KELP_BLOCK);
+    columnSlab(bg, ModBlocks.HAY_BLOCK_SLAB,          tex(Blocks.HAY_BLOCK, "_side"), tex(Blocks.HAY_BLOCK, "_top"), Blocks.HAY_BLOCK);
+    slabState(bg, ModBlocks.HONEY_BLOCK_SLAB,
+        new TextureMapping().put(TextureSlot.SIDE, tex(Blocks.HONEY_BLOCK, "_side")).put(TextureSlot.BOTTOM, tex(Blocks.HONEY_BLOCK, "_bottom")).put(TextureSlot.TOP, tex(Blocks.HONEY_BLOCK, "_top")),
+        ModelLocationUtils.getModelLocation(Blocks.HONEY_BLOCK));
+    cubeSlab(bg, ModBlocks.LADDER_SLAB,   tex(Blocks.LADDER), ModelLocationUtils.getModelLocation(Blocks.LADDER));
+    columnSlab(bg, ModBlocks.MELON_SLAB,  tex(Blocks.MELON, "_side"), tex(Blocks.MELON, "_top"), Blocks.MELON);
+    columnSlab(bg, ModBlocks.PUMPKIN_SLAB, tex(Blocks.PUMPKIN, "_side"), tex(Blocks.PUMPKIN, "_top"), Blocks.PUMPKIN);
+    cubeSlab(bg, ModBlocks.SCAFFOLDING_SLAB, tex(Blocks.SCAFFOLDING, "_stable_top"), ModelLocationUtils.getModelLocation(Blocks.SCAFFOLDING));
+    slabState(bg, ModBlocks.SCULK_CATALYST_SLAB,
+        new TextureMapping().put(TextureSlot.SIDE, tex(Blocks.SCULK_CATALYST, "_side")).put(TextureSlot.BOTTOM, tex(Blocks.SCULK_CATALYST, "_bottom")).put(TextureSlot.TOP, tex(Blocks.SCULK_CATALYST, "_top")),
+        ModelLocationUtils.getModelLocation(Blocks.SCULK_CATALYST));
+    cubeSlab(bg, ModBlocks.SLIME_BLOCK_SLAB, Blocks.SLIME_BLOCK);
+    slabState(bg, ModBlocks.TNT_SLAB,
+        new TextureMapping().put(TextureSlot.SIDE, tex(Blocks.TNT, "_side")).put(TextureSlot.BOTTOM, tex(Blocks.TNT, "_bottom")).put(TextureSlot.TOP, tex(Blocks.TNT, "_top")),
+        ModelLocationUtils.getModelLocation(Blocks.TNT));
+    cubeSlab(bg, ModBlocks.TUFF_SLAB, Blocks.TUFF);
   }
 
   private static Material tex(Block block) {
@@ -593,6 +782,12 @@ public class NSVModelProvider extends ModelProvider {
   private static void columnSlab(BlockModelGenerators bg, Block slab, Material side, Material top, Block full) {
     slabState(bg, slab,
         new TextureMapping().put(TextureSlot.SIDE, side).put(TextureSlot.BOTTOM, top).put(TextureSlot.TOP, top),
+        ModelLocationUtils.getModelLocation(full));
+  }
+
+  private static void nyliumSlab(BlockModelGenerators bg, Block slab, Material top, Material side, Block full) {
+    slabState(bg, slab,
+        new TextureMapping().put(TextureSlot.TOP, top).put(TextureSlot.SIDE, side).put(TextureSlot.BOTTOM, tex(Blocks.NETHERRACK)),
         ModelLocationUtils.getModelLocation(full));
   }
 

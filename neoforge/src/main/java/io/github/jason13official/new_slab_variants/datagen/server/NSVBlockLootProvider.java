@@ -267,6 +267,109 @@ public class NSVBlockLootProvider extends BlockLootSubProvider {
     this.add(ModBlocks.GREEN_TERRACOTTA_SLAB,      this::createSlabItemTable);
     this.add(ModBlocks.RED_TERRACOTTA_SLAB,        this::createSlabItemTable);
     this.add(ModBlocks.BLACK_TERRACOTTA_SLAB,      this::createSlabItemTable);
+
+    // Glazed terracotta
+    this.add(ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB,      this::createSlabItemTable);
+    this.add(ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB,       this::createSlabItemTable);
+    this.add(ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB,      this::createSlabItemTable);
+    this.add(ModBlocks.CYAN_GLAZED_TERRACOTTA_SLAB,       this::createSlabItemTable);
+    this.add(ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB,       this::createSlabItemTable);
+    this.add(ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB,      this::createSlabItemTable);
+    this.add(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB,       this::createSlabItemTable);
+    this.add(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB,    this::createSlabItemTable);
+    this.add(ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB,     this::createSlabItemTable);
+    this.add(ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB,       this::createSlabItemTable);
+    this.add(ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB,     this::createSlabItemTable);
+    this.add(ModBlocks.RED_GLAZED_TERRACOTTA_SLAB,        this::createSlabItemTable);
+    this.add(ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB,      this::createSlabItemTable);
+    this.add(ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB,     this::createSlabItemTable);
+
+    // Infested blocks
+    this.add(ModBlocks.INFESTED_STONE_SLAB,                this::createSlabItemTable);
+    this.add(ModBlocks.INFESTED_COBBLESTONE_SLAB,          this::createSlabItemTable);
+    this.add(ModBlocks.INFESTED_STONE_BRICKS_SLAB,         this::createSlabItemTable);
+    this.add(ModBlocks.INFESTED_CRACKED_STONE_BRICKS_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.INFESTED_CHISELED_STONE_BRICKS_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.INFESTED_MOSSY_STONE_BRICKS_SLAB,   this::createSlabItemTable);
+    this.add(ModBlocks.INFESTED_DEEPSLATE_SLAB,            this::createSlabItemTable);
+
+    // Waxed copper
+    this.add(ModBlocks.WAXED_COPPER_BLOCK_SLAB,   this::createSlabItemTable);
+    this.add(ModBlocks.WAXED_EXPOSED_COPPER_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.WAXED_OXIDIZED_COPPER_SLAB,  this::createSlabItemTable);
+    this.add(ModBlocks.WAXED_WEATHERED_COPPER_SLAB, this::createSlabItemTable);
+
+    // Froglights
+    this.add(ModBlocks.OCHRE_FROGLIGHT_SLAB,       this::createSlabItemTable);
+    this.add(ModBlocks.PEARLESCENT_FROGLIGHT_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.VERDANT_FROGLIGHT_SLAB,     this::createSlabItemTable);
+
+    // Nylium
+    this.add(ModBlocks.CRIMSON_NYLIUM_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.WARPED_NYLIUM_SLAB,  this::createSlabItemTable);
+
+    // Wood logs/wood/leaves
+    this.add(ModBlocks.OAK_LOG_SLAB,             this::createSlabItemTable);
+    this.add(ModBlocks.OAK_WOOD_SLAB,            this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_OAK_LOG_SLAB,    this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_OAK_WOOD_SLAB,   this::createSlabItemTable);
+    this.add(ModBlocks.OAK_LEAVES_SLAB,          this::createSlabItemTable);
+    this.add(ModBlocks.BIRCH_LOG_SLAB,           this::createSlabItemTable);
+    this.add(ModBlocks.BIRCH_WOOD_SLAB,          this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_BIRCH_LOG_SLAB,  this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_BIRCH_WOOD_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.BIRCH_LEAVES_SLAB,        this::createSlabItemTable);
+    this.add(ModBlocks.SPRUCE_LOG_SLAB,           this::createSlabItemTable);
+    this.add(ModBlocks.SPRUCE_WOOD_SLAB,          this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_SPRUCE_LOG_SLAB,  this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_SPRUCE_WOOD_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.SPRUCE_LEAVES_SLAB,        this::createSlabItemTable);
+    this.add(ModBlocks.JUNGLE_LOG_SLAB,           this::createSlabItemTable);
+    this.add(ModBlocks.JUNGLE_WOOD_SLAB,          this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_JUNGLE_LOG_SLAB,  this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_JUNGLE_WOOD_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.JUNGLE_LEAVES_SLAB,        this::createSlabItemTable);
+    this.add(ModBlocks.ACACIA_LOG_SLAB,           this::createSlabItemTable);
+    this.add(ModBlocks.ACACIA_WOOD_SLAB,          this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_ACACIA_LOG_SLAB,  this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_ACACIA_WOOD_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.ACACIA_LEAVES_SLAB,        this::createSlabItemTable);
+    this.add(ModBlocks.DARK_OAK_LOG_SLAB,           this::createSlabItemTable);
+    this.add(ModBlocks.DARK_OAK_WOOD_SLAB,          this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_DARK_OAK_LOG_SLAB,  this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_DARK_OAK_WOOD_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.DARK_OAK_LEAVES_SLAB,        this::createSlabItemTable);
+    this.add(ModBlocks.CHERRY_LOG_SLAB,           this::createSlabItemTable);
+    this.add(ModBlocks.CHERRY_WOOD_SLAB,          this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_CHERRY_LOG_SLAB,  this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_CHERRY_WOOD_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.CHERRY_LEAVES_SLAB,        this::createSlabItemTable);
+    this.add(ModBlocks.MANGROVE_LOG_SLAB,           this::createSlabItemTable);
+    this.add(ModBlocks.MANGROVE_WOOD_SLAB,          this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_MANGROVE_LOG_SLAB,  this::createSlabItemTable);
+    this.add(ModBlocks.STRIPPED_MANGROVE_WOOD_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.MANGROVE_LEAVES_SLAB,        this::createSlabItemTable);
+
+    // Misc
+    this.add(ModBlocks.ANCIENT_DEBRIS_SLAB,       this::createSlabItemTable);
+    this.add(ModBlocks.BOOKSHELF_SLAB,            this::createSlabItemTable);
+    this.add(ModBlocks.CHISELED_QUARTZ_BLOCK_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.CHISELED_RED_SANDSTONE_SLAB, this::createSlabItemTable);
+    this.add(ModBlocks.CHISELED_SANDSTONE_SLAB,   this::createSlabItemTable);
+    this.add(ModBlocks.DEEPSLATE_SLAB,            this::createSlabItemTable);
+    this.add(ModBlocks.DRIED_KELP_BLOCK_SLAB,     this::createSlabItemTable);
+    this.add(ModBlocks.HAY_BLOCK_SLAB,            this::createSlabItemTable);
+    this.add(ModBlocks.HONEY_BLOCK_SLAB,          this::createSlabItemTable);
+    this.add(ModBlocks.LADDER_SLAB,               this::createSlabItemTable);
+    this.add(ModBlocks.MELON_SLAB,                this::createSlabItemTable);
+    this.add(ModBlocks.PUMPKIN_SLAB,              this::createSlabItemTable);
+    this.add(ModBlocks.SCAFFOLDING_SLAB,          this::createSlabItemTable);
+    this.add(ModBlocks.SCULK_CATALYST_SLAB,       this::createSlabItemTable);
+    this.add(ModBlocks.SLIME_BLOCK_SLAB,          this::createSlabItemTable);
+    this.add(ModBlocks.TNT_SLAB,                  this::createSlabItemTable);
+    this.add(ModBlocks.TUFF_SLAB,                 this::createSlabItemTable);
   }
 
   @Override
@@ -382,7 +485,43 @@ public class NSVBlockLootProvider extends BlockLootSubProvider {
         ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB, ModBlocks.CYAN_TERRACOTTA_SLAB,
         ModBlocks.PURPLE_TERRACOTTA_SLAB, ModBlocks.BLUE_TERRACOTTA_SLAB,
         ModBlocks.BROWN_TERRACOTTA_SLAB, ModBlocks.GREEN_TERRACOTTA_SLAB,
-        ModBlocks.RED_TERRACOTTA_SLAB, ModBlocks.BLACK_TERRACOTTA_SLAB
+        ModBlocks.RED_TERRACOTTA_SLAB, ModBlocks.BLACK_TERRACOTTA_SLAB,
+        // Glazed terracotta
+        ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB, ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB,
+        ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB, ModBlocks.CYAN_GLAZED_TERRACOTTA_SLAB,
+        ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB, ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB,
+        ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB, ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB,
+        ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB, ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB,
+        ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB, ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB,
+        ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB, ModBlocks.RED_GLAZED_TERRACOTTA_SLAB,
+        ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB, ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB,
+        // Infested blocks
+        ModBlocks.INFESTED_STONE_SLAB, ModBlocks.INFESTED_COBBLESTONE_SLAB,
+        ModBlocks.INFESTED_STONE_BRICKS_SLAB, ModBlocks.INFESTED_CRACKED_STONE_BRICKS_SLAB,
+        ModBlocks.INFESTED_CHISELED_STONE_BRICKS_SLAB, ModBlocks.INFESTED_MOSSY_STONE_BRICKS_SLAB,
+        ModBlocks.INFESTED_DEEPSLATE_SLAB,
+        // Waxed copper
+        ModBlocks.WAXED_COPPER_BLOCK_SLAB, ModBlocks.WAXED_EXPOSED_COPPER_SLAB,
+        ModBlocks.WAXED_OXIDIZED_COPPER_SLAB, ModBlocks.WAXED_WEATHERED_COPPER_SLAB,
+        // Froglights
+        ModBlocks.OCHRE_FROGLIGHT_SLAB, ModBlocks.PEARLESCENT_FROGLIGHT_SLAB, ModBlocks.VERDANT_FROGLIGHT_SLAB,
+        // Nylium
+        ModBlocks.CRIMSON_NYLIUM_SLAB, ModBlocks.WARPED_NYLIUM_SLAB,
+        // Wood logs/wood/leaves
+        ModBlocks.OAK_LOG_SLAB, ModBlocks.OAK_WOOD_SLAB, ModBlocks.STRIPPED_OAK_LOG_SLAB, ModBlocks.STRIPPED_OAK_WOOD_SLAB, ModBlocks.OAK_LEAVES_SLAB,
+        ModBlocks.BIRCH_LOG_SLAB, ModBlocks.BIRCH_WOOD_SLAB, ModBlocks.STRIPPED_BIRCH_LOG_SLAB, ModBlocks.STRIPPED_BIRCH_WOOD_SLAB, ModBlocks.BIRCH_LEAVES_SLAB,
+        ModBlocks.SPRUCE_LOG_SLAB, ModBlocks.SPRUCE_WOOD_SLAB, ModBlocks.STRIPPED_SPRUCE_LOG_SLAB, ModBlocks.STRIPPED_SPRUCE_WOOD_SLAB, ModBlocks.SPRUCE_LEAVES_SLAB,
+        ModBlocks.JUNGLE_LOG_SLAB, ModBlocks.JUNGLE_WOOD_SLAB, ModBlocks.STRIPPED_JUNGLE_LOG_SLAB, ModBlocks.STRIPPED_JUNGLE_WOOD_SLAB, ModBlocks.JUNGLE_LEAVES_SLAB,
+        ModBlocks.ACACIA_LOG_SLAB, ModBlocks.ACACIA_WOOD_SLAB, ModBlocks.STRIPPED_ACACIA_LOG_SLAB, ModBlocks.STRIPPED_ACACIA_WOOD_SLAB, ModBlocks.ACACIA_LEAVES_SLAB,
+        ModBlocks.DARK_OAK_LOG_SLAB, ModBlocks.DARK_OAK_WOOD_SLAB, ModBlocks.STRIPPED_DARK_OAK_LOG_SLAB, ModBlocks.STRIPPED_DARK_OAK_WOOD_SLAB, ModBlocks.DARK_OAK_LEAVES_SLAB,
+        ModBlocks.CHERRY_LOG_SLAB, ModBlocks.CHERRY_WOOD_SLAB, ModBlocks.STRIPPED_CHERRY_LOG_SLAB, ModBlocks.STRIPPED_CHERRY_WOOD_SLAB, ModBlocks.CHERRY_LEAVES_SLAB,
+        ModBlocks.MANGROVE_LOG_SLAB, ModBlocks.MANGROVE_WOOD_SLAB, ModBlocks.STRIPPED_MANGROVE_LOG_SLAB, ModBlocks.STRIPPED_MANGROVE_WOOD_SLAB, ModBlocks.MANGROVE_LEAVES_SLAB,
+        // Misc
+        ModBlocks.ANCIENT_DEBRIS_SLAB, ModBlocks.BOOKSHELF_SLAB, ModBlocks.CHISELED_QUARTZ_BLOCK_SLAB,
+        ModBlocks.CHISELED_RED_SANDSTONE_SLAB, ModBlocks.CHISELED_SANDSTONE_SLAB, ModBlocks.DEEPSLATE_SLAB,
+        ModBlocks.DRIED_KELP_BLOCK_SLAB, ModBlocks.HAY_BLOCK_SLAB, ModBlocks.HONEY_BLOCK_SLAB,
+        ModBlocks.LADDER_SLAB, ModBlocks.MELON_SLAB, ModBlocks.PUMPKIN_SLAB, ModBlocks.SCAFFOLDING_SLAB,
+        ModBlocks.SCULK_CATALYST_SLAB, ModBlocks.SLIME_BLOCK_SLAB, ModBlocks.TNT_SLAB, ModBlocks.TUFF_SLAB
     );
   }
 }
