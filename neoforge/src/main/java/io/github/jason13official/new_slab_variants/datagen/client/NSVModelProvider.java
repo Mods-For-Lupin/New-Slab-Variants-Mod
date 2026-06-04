@@ -43,6 +43,12 @@ public class NSVModelProvider extends ModelProvider {
       Identifier.fromNamespaceAndPath("minecraft", "block/dried_kelp_top")
   );
 
+  private static final ModelTemplate LOWERED_SLAB_BOTTOM = new ModelTemplate(
+      Optional.of(Identifier.fromNamespaceAndPath("new_slab_variants", "block/template_lowered_slab")),
+      Optional.empty(),
+      TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE
+  );
+
   private static final ModelTemplate GRASS_SLAB_BOTTOM = new ModelTemplate(
       Optional.of(Identifier.fromNamespaceAndPath("new_slab_variants", "block/template_grass_slab")),
       Optional.empty(),
