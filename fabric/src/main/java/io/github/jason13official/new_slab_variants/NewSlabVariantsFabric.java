@@ -10,6 +10,7 @@ import io.github.jason13official.new_slab_variants.impl.common.registry.ModTiles
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.resource.v1.DataResourceLoader;
 import net.fabricmc.fabric.impl.resource.DataResourceLoaderImpl;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -34,7 +35,7 @@ public class NewSlabVariantsFabric implements ModInitializer {
 
     NewSlabVariants.init();
 
-    DataResourceLoaderImpl.get(PackType.SERVER_DATA).registerReloadListener(NewSlabVariants.id(Constants.MOD_ID), new ResourceReloadListener());
+    DataResourceLoader.get().registerReloadListener(NewSlabVariants.id(Constants.MOD_ID), new ResourceReloadListener());
   }
 
   public <T> void bind(Registry<T> registry, Consumer<BiConsumer<T, Identifier>> source) {
