@@ -302,7 +302,7 @@ public class NSVBlockLootProvider extends BlockLootSubProvider {
         ModBlocks.BONE_BLOCK_SLAB, ModBlocks.PURPUR_PILLAR_SLAB, ModBlocks.QUARTZ_PILLAR_SLAB,
         ModBlocks.TERRACOTTA_SLAB,
         // Terrain
-        ModBlocks.DIRT_SLAB, ModBlocks.COARSE_DIRT_SLAB, ModBlocks.GRAVEL_SLAB,
+        ModBlocks.DIRT_SLAB, ModBlocks.COARSE_DIRT_SLAB, ModBlocks.GRASS_BLOCK_SLAB, ModBlocks.GRAVEL_SLAB,
         ModBlocks.SAND_SLAB, ModBlocks.RED_SAND_SLAB,
         // Earthy/soft
         ModBlocks.CLAY_SLAB, ModBlocks.MUD_SLAB, ModBlocks.ROOTED_DIRT_SLAB, ModBlocks.SOUL_SOIL_SLAB,

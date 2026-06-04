@@ -3,6 +3,7 @@ package io.github.jason13official.new_slab_variants.datagen.client;
 import io.github.jason13official.new_slab_variants.impl.common.registry.ModBlocks;
 import io.github.jason13official.new_slab_variants.impl.common.registry.ModItems;
 import java.util.stream.Stream;
+import net.minecraft.client.color.item.GrassColorSource;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
@@ -609,6 +610,6 @@ public class NSVModelProvider extends ModelProvider {
                 .select(SlabType.TOP,    mv(top))
                 .select(SlabType.DOUBLE, mv(ModelLocationUtils.getModelLocation(full))))
     );
-    // bg.registerSimpleItemModel(slab, bottom);
+    bg.registerSimpleTintedItemModel(slab, bottom, new GrassColorSource());
   }
 }
