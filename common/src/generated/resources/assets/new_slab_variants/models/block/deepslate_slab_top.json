@@ -2,7 +2,7 @@
   "parent": "minecraft:block/slab_top",
   "textures": {
     "bottom": "minecraft:block/deepslate_top",
-    "side": "minecraft:block/deepslate_side",
+    "side": "minecraft:block/deepslate",
     "top": "minecraft:block/deepslate_top"
   }
 }

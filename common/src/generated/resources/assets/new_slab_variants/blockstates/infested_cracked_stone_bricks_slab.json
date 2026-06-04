@@ -4,7 +4,7 @@
       "model": "new_slab_variants:block/infested_cracked_stone_bricks_slab"
     },
     "type=double": {
-      "model": "minecraft:block/infested_cracked_stone_bricks"
+      "model": "minecraft:block/cracked_stone_bricks"
     },
     "type=top": {
       "model": "new_slab_variants:block/infested_cracked_stone_bricks_slab_top"

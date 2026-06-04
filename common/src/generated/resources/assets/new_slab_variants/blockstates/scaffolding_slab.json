@@ -4,7 +4,7 @@
       "model": "new_slab_variants:block/scaffolding_slab"
     },
     "type=double": {
-      "model": "minecraft:block/scaffolding"
+      "model": "minecraft:block/scaffolding_stable"
     },
     "type=top": {
       "model": "new_slab_variants:block/scaffolding_slab_top"

@@ -4,7 +4,7 @@
       "model": "new_slab_variants:block/waxed_oxidized_copper_slab"
     },
     "type=double": {
-      "model": "minecraft:block/waxed_oxidized_copper"
+      "model": "minecraft:block/oxidized_copper"
     },
     "type=top": {
       "model": "new_slab_variants:block/waxed_oxidized_copper_slab_top"

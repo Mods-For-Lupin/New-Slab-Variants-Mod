@@ -4,7 +4,7 @@
       "model": "new_slab_variants:block/infested_stone_slab"
     },
     "type=double": {
-      "model": "minecraft:block/infested_stone"
+      "model": "minecraft:block/stone"
     },
     "type=top": {
       "model": "new_slab_variants:block/infested_stone_slab_top"

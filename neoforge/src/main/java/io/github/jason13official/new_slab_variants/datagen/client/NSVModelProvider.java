@@ -36,6 +36,12 @@ public class NSVModelProvider extends ModelProvider {
   private static final Material SNOW_TEX = new Material(
       Identifier.fromNamespaceAndPath("minecraft", "block/snow")
   );
+  private static final Material DRIED_KELP_SIDE = new Material(
+      Identifier.fromNamespaceAndPath("minecraft", "block/dried_kelp_side")
+  );
+  private static final Material DRIED_KELP_TOP = new Material(
+      Identifier.fromNamespaceAndPath("minecraft", "block/dried_kelp_top")
+  );
 
   private static final ModelTemplate GRASS_SLAB_BOTTOM = new ModelTemplate(
       Optional.of(Identifier.fromNamespaceAndPath("new_slab_variants", "block/template_grass_slab")),
@@ -632,20 +638,21 @@ public class NSVModelProvider extends ModelProvider {
     cubeSlab(bg, ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB,      Blocks.WHITE_GLAZED_TERRACOTTA);
     cubeSlab(bg, ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB,     Blocks.YELLOW_GLAZED_TERRACOTTA);
 
-    // Infested blocks — texture matches non-infested counterpart
-    cubeSlab(bg, ModBlocks.INFESTED_STONE_SLAB,                tex(Blocks.STONE),                 ModelLocationUtils.getModelLocation(Blocks.INFESTED_STONE));
-    cubeSlab(bg, ModBlocks.INFESTED_COBBLESTONE_SLAB,          tex(Blocks.COBBLESTONE),           ModelLocationUtils.getModelLocation(Blocks.INFESTED_COBBLESTONE));
-    cubeSlab(bg, ModBlocks.INFESTED_STONE_BRICKS_SLAB,         tex(Blocks.STONE_BRICKS),          ModelLocationUtils.getModelLocation(Blocks.INFESTED_STONE_BRICKS));
-    cubeSlab(bg, ModBlocks.INFESTED_CRACKED_STONE_BRICKS_SLAB, tex(Blocks.CRACKED_STONE_BRICKS),  ModelLocationUtils.getModelLocation(Blocks.INFESTED_CRACKED_STONE_BRICKS));
-    cubeSlab(bg, ModBlocks.INFESTED_CHISELED_STONE_BRICKS_SLAB, tex(Blocks.CHISELED_STONE_BRICKS), ModelLocationUtils.getModelLocation(Blocks.INFESTED_CHISELED_STONE_BRICKS));
-    cubeSlab(bg, ModBlocks.INFESTED_MOSSY_STONE_BRICKS_SLAB,   tex(Blocks.MOSSY_STONE_BRICKS),    ModelLocationUtils.getModelLocation(Blocks.INFESTED_MOSSY_STONE_BRICKS));
-    columnSlab(bg, ModBlocks.INFESTED_DEEPSLATE_SLAB,          tex(Blocks.DEEPSLATE, "_side"), tex(Blocks.DEEPSLATE, "_top"), Blocks.INFESTED_DEEPSLATE);
+    // Infested blocks — texture matches non-infested counterpart; full model = non-infested (vanilla has no infested_* models)
+    cubeSlab(bg, ModBlocks.INFESTED_STONE_SLAB,                tex(Blocks.STONE),                 ModelLocationUtils.getModelLocation(Blocks.STONE));
+    cubeSlab(bg, ModBlocks.INFESTED_COBBLESTONE_SLAB,          tex(Blocks.COBBLESTONE),           ModelLocationUtils.getModelLocation(Blocks.COBBLESTONE));
+    cubeSlab(bg, ModBlocks.INFESTED_STONE_BRICKS_SLAB,         tex(Blocks.STONE_BRICKS),          ModelLocationUtils.getModelLocation(Blocks.STONE_BRICKS));
+    cubeSlab(bg, ModBlocks.INFESTED_CRACKED_STONE_BRICKS_SLAB, tex(Blocks.CRACKED_STONE_BRICKS),  ModelLocationUtils.getModelLocation(Blocks.CRACKED_STONE_BRICKS));
+    cubeSlab(bg, ModBlocks.INFESTED_CHISELED_STONE_BRICKS_SLAB, tex(Blocks.CHISELED_STONE_BRICKS), ModelLocationUtils.getModelLocation(Blocks.CHISELED_STONE_BRICKS));
+    cubeSlab(bg, ModBlocks.INFESTED_MOSSY_STONE_BRICKS_SLAB,   tex(Blocks.MOSSY_STONE_BRICKS),    ModelLocationUtils.getModelLocation(Blocks.MOSSY_STONE_BRICKS));
+    // deepslate side texture = "deepslate" (no _side suffix); full model = Blocks.DEEPSLATE (no infested_deepslate model)
+    columnSlab(bg, ModBlocks.INFESTED_DEEPSLATE_SLAB, tex(Blocks.DEEPSLATE), tex(Blocks.DEEPSLATE, "_top"), Blocks.DEEPSLATE);
 
-    // Waxed copper — texture matches non-waxed
-    cubeSlab(bg, ModBlocks.WAXED_COPPER_BLOCK_SLAB,   tex(Blocks.COPPER_BLOCK),   ModelLocationUtils.getModelLocation(Blocks.WAXED_COPPER_BLOCK));
-    cubeSlab(bg, ModBlocks.WAXED_EXPOSED_COPPER_SLAB, tex(Blocks.EXPOSED_COPPER), ModelLocationUtils.getModelLocation(Blocks.WAXED_EXPOSED_COPPER));
-    cubeSlab(bg, ModBlocks.WAXED_OXIDIZED_COPPER_SLAB,  tex(Blocks.OXIDIZED_COPPER),  ModelLocationUtils.getModelLocation(Blocks.WAXED_OXIDIZED_COPPER));
-    cubeSlab(bg, ModBlocks.WAXED_WEATHERED_COPPER_SLAB, tex(Blocks.WEATHERED_COPPER), ModelLocationUtils.getModelLocation(Blocks.WAXED_WEATHERED_COPPER));
+    // Waxed copper — texture matches non-waxed; full model = non-waxed (vanilla has no waxed_* models)
+    cubeSlab(bg, ModBlocks.WAXED_COPPER_BLOCK_SLAB,     tex(Blocks.COPPER_BLOCK),   ModelLocationUtils.getModelLocation(Blocks.COPPER_BLOCK));
+    cubeSlab(bg, ModBlocks.WAXED_EXPOSED_COPPER_SLAB,   tex(Blocks.EXPOSED_COPPER), ModelLocationUtils.getModelLocation(Blocks.EXPOSED_COPPER));
+    cubeSlab(bg, ModBlocks.WAXED_OXIDIZED_COPPER_SLAB,  tex(Blocks.OXIDIZED_COPPER),  ModelLocationUtils.getModelLocation(Blocks.OXIDIZED_COPPER));
+    cubeSlab(bg, ModBlocks.WAXED_WEATHERED_COPPER_SLAB, tex(Blocks.WEATHERED_COPPER), ModelLocationUtils.getModelLocation(Blocks.WEATHERED_COPPER));
 
     // Froglights — RotatedPillarBlock; column model side/top
     columnSlab(bg, ModBlocks.OCHRE_FROGLIGHT_SLAB,       tex(Blocks.OCHRE_FROGLIGHT,       "_side"), tex(Blocks.OCHRE_FROGLIGHT,       "_top"), Blocks.OCHRE_FROGLIGHT);
@@ -712,8 +719,10 @@ public class NSVModelProvider extends ModelProvider {
     columnSlab(bg, ModBlocks.CHISELED_QUARTZ_BLOCK_SLAB, tex(Blocks.CHISELED_QUARTZ_BLOCK), tex(Blocks.CHISELED_QUARTZ_BLOCK, "_top"), Blocks.CHISELED_QUARTZ_BLOCK);
     cubeSlab(bg, ModBlocks.CHISELED_RED_SANDSTONE_SLAB, Blocks.CHISELED_RED_SANDSTONE);
     cubeSlab(bg, ModBlocks.CHISELED_SANDSTONE_SLAB,    Blocks.CHISELED_SANDSTONE);
-    columnSlab(bg, ModBlocks.DEEPSLATE_SLAB,           tex(Blocks.DEEPSLATE, "_side"), tex(Blocks.DEEPSLATE, "_top"), Blocks.DEEPSLATE);
-    columnSlab(bg, ModBlocks.DRIED_KELP_BLOCK_SLAB,   tex(Blocks.DRIED_KELP_BLOCK, "_side"), tex(Blocks.DRIED_KELP_BLOCK, "_top"), Blocks.DRIED_KELP_BLOCK);
+    // deepslate column: side tex = "deepslate" (no _side suffix per vanilla model)
+    columnSlab(bg, ModBlocks.DEEPSLATE_SLAB,           tex(Blocks.DEEPSLATE), tex(Blocks.DEEPSLATE, "_top"), Blocks.DEEPSLATE);
+    // dried_kelp_block textures are dried_kelp_side/top, not dried_kelp_block_side/top
+    columnSlab(bg, ModBlocks.DRIED_KELP_BLOCK_SLAB,   DRIED_KELP_SIDE, DRIED_KELP_TOP, Blocks.DRIED_KELP_BLOCK);
     columnSlab(bg, ModBlocks.HAY_BLOCK_SLAB,          tex(Blocks.HAY_BLOCK, "_side"), tex(Blocks.HAY_BLOCK, "_top"), Blocks.HAY_BLOCK);
     slabState(bg, ModBlocks.HONEY_BLOCK_SLAB,
         new TextureMapping().put(TextureSlot.SIDE, tex(Blocks.HONEY_BLOCK, "_side")).put(TextureSlot.BOTTOM, tex(Blocks.HONEY_BLOCK, "_bottom")).put(TextureSlot.TOP, tex(Blocks.HONEY_BLOCK, "_top")),
@@ -721,7 +730,13 @@ public class NSVModelProvider extends ModelProvider {
     cubeSlab(bg, ModBlocks.LADDER_SLAB,   tex(Blocks.LADDER), ModelLocationUtils.getModelLocation(Blocks.LADDER));
     columnSlab(bg, ModBlocks.MELON_SLAB,  tex(Blocks.MELON, "_side"), tex(Blocks.MELON, "_top"), Blocks.MELON);
     columnSlab(bg, ModBlocks.PUMPKIN_SLAB, tex(Blocks.PUMPKIN, "_side"), tex(Blocks.PUMPKIN, "_top"), Blocks.PUMPKIN);
-    cubeSlab(bg, ModBlocks.SCAFFOLDING_SLAB, tex(Blocks.SCAFFOLDING, "_stable_top"), ModelLocationUtils.getModelLocation(Blocks.SCAFFOLDING));
+    // scaffolding has no top-level "scaffolding" model; use scaffolding_stable; textures are scaffolding_top/side/bottom
+    slabState(bg, ModBlocks.SCAFFOLDING_SLAB,
+        new TextureMapping()
+            .put(TextureSlot.SIDE,   tex(Blocks.SCAFFOLDING, "_side"))
+            .put(TextureSlot.BOTTOM, tex(Blocks.SCAFFOLDING, "_bottom"))
+            .put(TextureSlot.TOP,    tex(Blocks.SCAFFOLDING, "_top")),
+        Identifier.fromNamespaceAndPath("minecraft", "block/scaffolding_stable"));
     slabState(bg, ModBlocks.SCULK_CATALYST_SLAB,
         new TextureMapping().put(TextureSlot.SIDE, tex(Blocks.SCULK_CATALYST, "_side")).put(TextureSlot.BOTTOM, tex(Blocks.SCULK_CATALYST, "_bottom")).put(TextureSlot.TOP, tex(Blocks.SCULK_CATALYST, "_top")),
         ModelLocationUtils.getModelLocation(Blocks.SCULK_CATALYST));
