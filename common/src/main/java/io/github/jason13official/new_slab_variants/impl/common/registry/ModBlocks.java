@@ -86,6 +86,7 @@ public class ModBlocks {
   // ── Terrain ──────────────────────────────────────────────────────────────
   public static Block DIRT_SLAB;
   public static Block COARSE_DIRT_SLAB;
+  public static Block GRASS_BLOCK_SLAB;
   public static Block GRAVEL_SLAB;
   public static Block SAND_SLAB;
   public static Block RED_SAND_SLAB;
@@ -339,6 +340,7 @@ public class ModBlocks {
     // Terrain
     DIRT_SLAB              = slab("dirt_slab",              Blocks.DIRT,              consumer);
     COARSE_DIRT_SLAB       = slab("coarse_dirt_slab",       Blocks.COARSE_DIRT,       consumer);
+    GRASS_BLOCK_SLAB       = slab("grass_block_slab",       Blocks.GRASS_BLOCK,       consumer);
     GRAVEL_SLAB            = slab("gravel_slab",            Blocks.GRAVEL,            consumer);
     SAND_SLAB              = slab("sand_slab",              Blocks.SAND,              consumer);
     RED_SAND_SLAB          = slab("red_sand_slab",          Blocks.RED_SAND,          consumer);

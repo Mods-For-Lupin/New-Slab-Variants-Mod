@@ -82,9 +82,10 @@ public class NSVBlockLootProvider extends BlockLootSubProvider {
     this.add(ModBlocks.TERRACOTTA_SLAB,        this::createSlabItemTable);
 
     // Terrain
-    this.add(ModBlocks.DIRT_SLAB,        this::createSlabItemTable);
-    this.add(ModBlocks.COARSE_DIRT_SLAB, this::createSlabItemTable);
-    this.add(ModBlocks.GRAVEL_SLAB,      this::createSlabItemTable);
+    this.add(ModBlocks.DIRT_SLAB,         this::createSlabItemTable);
+    this.add(ModBlocks.COARSE_DIRT_SLAB,  this::createSlabItemTable);
+    this.add(ModBlocks.GRASS_BLOCK_SLAB,  this::createSlabItemTable);
+    this.add(ModBlocks.GRAVEL_SLAB,       this::createSlabItemTable);
     this.add(ModBlocks.SAND_SLAB,        this::createSlabItemTable);
     this.add(ModBlocks.RED_SAND_SLAB,    this::createSlabItemTable);
 

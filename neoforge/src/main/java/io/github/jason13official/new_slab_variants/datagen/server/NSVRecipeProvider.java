@@ -95,9 +95,10 @@ public class NSVRecipeProvider extends RecipeProvider.Runner {
         slab(ModBlocks.TERRACOTTA_SLAB,        Blocks.TERRACOTTA);
 
         // Terrain
-        slab(ModBlocks.DIRT_SLAB,        Blocks.DIRT);
-        slab(ModBlocks.COARSE_DIRT_SLAB, Blocks.COARSE_DIRT);
-        slab(ModBlocks.GRAVEL_SLAB,      Blocks.GRAVEL);
+        slab(ModBlocks.DIRT_SLAB,         Blocks.DIRT);
+        slab(ModBlocks.COARSE_DIRT_SLAB,  Blocks.COARSE_DIRT);
+        slab(ModBlocks.GRASS_BLOCK_SLAB,  Blocks.GRASS_BLOCK);
+        slab(ModBlocks.GRAVEL_SLAB,       Blocks.GRAVEL);
         slab(ModBlocks.SAND_SLAB,        Blocks.SAND);
         slab(ModBlocks.RED_SAND_SLAB,    Blocks.RED_SAND);
 

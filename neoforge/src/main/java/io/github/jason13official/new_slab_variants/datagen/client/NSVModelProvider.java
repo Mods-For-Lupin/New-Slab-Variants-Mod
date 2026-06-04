@@ -11,7 +11,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.blockstates.PropertyDispatch;
+import java.util.Optional;
 import net.minecraft.client.data.models.model.ModelLocationUtils;
+import net.minecraft.client.data.models.model.ModelTemplate;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
@@ -32,6 +34,17 @@ public class NSVModelProvider extends ModelProvider {
   );
   private static final Material SNOW_TEX = new Material(
       Identifier.fromNamespaceAndPath("minecraft", "block/snow")
+  );
+
+  private static final ModelTemplate GRASS_SLAB_BOTTOM = new ModelTemplate(
+      Optional.of(Identifier.fromNamespaceAndPath("new_slab_variants", "block/template_grass_slab")),
+      Optional.empty(),
+      TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE
+  );
+  private static final ModelTemplate GRASS_SLAB_TOP = new ModelTemplate(
+      Optional.of(Identifier.fromNamespaceAndPath("new_slab_variants", "block/template_grass_slab_top")),
+      Optional.of("_top"),
+      TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE
   );
 
   public NSVModelProvider(PackOutput output) {
@@ -71,8 +84,8 @@ public class NSVModelProvider extends ModelProvider {
         ModBlocks.BONE_BLOCK_SLAB, ModBlocks.PURPUR_PILLAR_SLAB, ModBlocks.QUARTZ_PILLAR_SLAB,
         ModBlocks.TERRACOTTA_SLAB,
         // Terrain
-        ModBlocks.DIRT_SLAB, ModBlocks.COARSE_DIRT_SLAB, ModBlocks.GRAVEL_SLAB,
-        ModBlocks.SAND_SLAB, ModBlocks.RED_SAND_SLAB,
+        ModBlocks.DIRT_SLAB, ModBlocks.COARSE_DIRT_SLAB, ModBlocks.GRASS_BLOCK_SLAB,
+        ModBlocks.GRAVEL_SLAB, ModBlocks.SAND_SLAB, ModBlocks.RED_SAND_SLAB,
         // Earthy/soft
         ModBlocks.CLAY_SLAB, ModBlocks.MUD_SLAB, ModBlocks.ROOTED_DIRT_SLAB, ModBlocks.SOUL_SOIL_SLAB,
         // Natural/functional
@@ -188,8 +201,8 @@ public class NSVModelProvider extends ModelProvider {
         ModItems.BONE_BLOCK_SLAB, ModItems.PURPUR_PILLAR_SLAB, ModItems.QUARTZ_PILLAR_SLAB,
         ModItems.TERRACOTTA_SLAB,
         // Terrain
-        ModItems.DIRT_SLAB, ModItems.COARSE_DIRT_SLAB, ModItems.GRAVEL_SLAB,
-        ModItems.SAND_SLAB, ModItems.RED_SAND_SLAB,
+        ModItems.DIRT_SLAB, ModItems.COARSE_DIRT_SLAB, ModItems.GRASS_BLOCK_SLAB,
+        ModItems.GRAVEL_SLAB, ModItems.SAND_SLAB, ModItems.RED_SAND_SLAB,
         // Earthy/soft
         ModItems.CLAY_SLAB, ModItems.MUD_SLAB, ModItems.ROOTED_DIRT_SLAB, ModItems.SOUL_SOIL_SLAB,
         // Natural/functional
@@ -334,6 +347,7 @@ public class NSVModelProvider extends ModelProvider {
     // Terrain
     cubeSlab(bg, ModBlocks.DIRT_SLAB,        Blocks.DIRT);
     cubeSlab(bg, ModBlocks.COARSE_DIRT_SLAB, Blocks.COARSE_DIRT);
+    grassSlab(bg, ModBlocks.GRASS_BLOCK_SLAB, Blocks.GRASS_BLOCK);
     cubeSlab(bg, ModBlocks.GRAVEL_SLAB,      Blocks.GRAVEL);
     cubeSlab(bg, ModBlocks.SAND_SLAB,        Blocks.SAND);
     cubeSlab(bg, ModBlocks.RED_SAND_SLAB,    Blocks.RED_SAND);
@@ -579,5 +593,22 @@ public class NSVModelProvider extends ModelProvider {
     slabState(bg, slab,
         new TextureMapping().put(TextureSlot.SIDE, side).put(TextureSlot.BOTTOM, top).put(TextureSlot.TOP, top),
         ModelLocationUtils.getModelLocation(full));
+  }
+
+  private static void grassSlab(BlockModelGenerators bg, Block slab, Block full) {
+    TextureMapping mapping = new TextureMapping()
+        .put(TextureSlot.BOTTOM, tex(Blocks.DIRT))
+        .put(TextureSlot.TOP,    tex(full, "_top"))
+        .put(TextureSlot.SIDE,   tex(full, "_side"));
+    Identifier bottom = GRASS_SLAB_BOTTOM.create(slab, mapping, bg.modelOutput);
+    Identifier top    = GRASS_SLAB_TOP.create(slab, mapping, bg.modelOutput);
+    bg.blockStateOutput.accept(
+        MultiVariantGenerator.dispatch(slab)
+            .with(PropertyDispatch.initial(BlockStateProperties.SLAB_TYPE)
+                .select(SlabType.BOTTOM, mv(bottom))
+                .select(SlabType.TOP,    mv(top))
+                .select(SlabType.DOUBLE, mv(ModelLocationUtils.getModelLocation(full))))
+    );
+    // bg.registerSimpleItemModel(slab, bottom);
   }
 }

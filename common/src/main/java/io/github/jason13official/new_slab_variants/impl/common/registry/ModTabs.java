@@ -86,6 +86,7 @@ public class ModTabs {
           // Terrain
           output.accept(ModItems.DIRT_SLAB);
           output.accept(ModItems.COARSE_DIRT_SLAB);
+          output.accept(ModItems.GRASS_BLOCK_SLAB);
           output.accept(ModItems.GRAVEL_SLAB);
           output.accept(ModItems.SAND_SLAB);
           output.accept(ModItems.RED_SAND_SLAB);

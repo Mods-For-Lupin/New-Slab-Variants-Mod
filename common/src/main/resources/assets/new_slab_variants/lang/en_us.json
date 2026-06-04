@@ -63,6 +63,7 @@
 
   "block.new_slab_variants.dirt_slab": "Dirt Slab",
   "block.new_slab_variants.coarse_dirt_slab": "Coarse Dirt Slab",
+  "block.new_slab_variants.grass_block_slab": "Grass Block Slab",
   "block.new_slab_variants.gravel_slab": "Gravel Slab",
   "block.new_slab_variants.sand_slab": "Sand Slab",
   "block.new_slab_variants.red_sand_slab": "Red Sand Slab",
@@ -292,6 +293,7 @@
 
   "item.new_slab_variants.dirt_slab": "Dirt Slab",
   "item.new_slab_variants.coarse_dirt_slab": "Coarse Dirt Slab",
+  "item.new_slab_variants.grass_block_slab": "Grass Block Slab",
   "item.new_slab_variants.gravel_slab": "Gravel Slab",
   "item.new_slab_variants.sand_slab": "Sand Slab",
   "item.new_slab_variants.red_sand_slab": "Red Sand Slab",

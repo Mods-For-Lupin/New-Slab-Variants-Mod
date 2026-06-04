@@ -54,8 +54,8 @@ public class NSVBlockTagProvider extends IntrinsicHolderTagsProvider<Block> {
         .add(ModBlocks.BONE_BLOCK_SLAB).add(ModBlocks.PURPUR_PILLAR_SLAB).add(ModBlocks.QUARTZ_PILLAR_SLAB)
         .add(ModBlocks.TERRACOTTA_SLAB)
         // Terrain
-        .add(ModBlocks.DIRT_SLAB).add(ModBlocks.COARSE_DIRT_SLAB).add(ModBlocks.GRAVEL_SLAB)
-        .add(ModBlocks.SAND_SLAB).add(ModBlocks.RED_SAND_SLAB)
+        .add(ModBlocks.DIRT_SLAB).add(ModBlocks.COARSE_DIRT_SLAB).add(ModBlocks.GRASS_BLOCK_SLAB)
+        .add(ModBlocks.GRAVEL_SLAB).add(ModBlocks.SAND_SLAB).add(ModBlocks.RED_SAND_SLAB)
         // Earthy/soft
         .add(ModBlocks.CLAY_SLAB).add(ModBlocks.MUD_SLAB)
         .add(ModBlocks.ROOTED_DIRT_SLAB).add(ModBlocks.SOUL_SOIL_SLAB)
@@ -270,7 +270,7 @@ public class NSVBlockTagProvider extends IntrinsicHolderTagsProvider<Block> {
         .add(ModBlocks.CLAY_SLAB).add(ModBlocks.MUD_SLAB)
         .add(ModBlocks.ROOTED_DIRT_SLAB).add(ModBlocks.SOUL_SOIL_SLAB)
         // New
-        .add(ModBlocks.DIRT_SLAB).add(ModBlocks.COARSE_DIRT_SLAB)
+        .add(ModBlocks.DIRT_SLAB).add(ModBlocks.COARSE_DIRT_SLAB).add(ModBlocks.GRASS_BLOCK_SLAB)
         .add(ModBlocks.GRAVEL_SLAB).add(ModBlocks.SAND_SLAB).add(ModBlocks.RED_SAND_SLAB)
         .add(ModBlocks.SOUL_SAND_SLAB).add(ModBlocks.SNOW_BLOCK_SLAB);
 

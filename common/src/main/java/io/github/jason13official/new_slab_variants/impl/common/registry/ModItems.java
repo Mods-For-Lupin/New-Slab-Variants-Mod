@@ -81,6 +81,7 @@ public class ModItems {
   // ── Terrain ──────────────────────────────────────────────────────────────
   public static Item DIRT_SLAB;
   public static Item COARSE_DIRT_SLAB;
+  public static Item GRASS_BLOCK_SLAB;
   public static Item GRAVEL_SLAB;
   public static Item SAND_SLAB;
   public static Item RED_SAND_SLAB;
@@ -333,6 +334,7 @@ public class ModItems {
     // Terrain
     DIRT_SLAB              = blockItem("dirt_slab",              ModBlocks.DIRT_SLAB,              consumer);
     COARSE_DIRT_SLAB       = blockItem("coarse_dirt_slab",       ModBlocks.COARSE_DIRT_SLAB,       consumer);
+    GRASS_BLOCK_SLAB       = blockItem("grass_block_slab",       ModBlocks.GRASS_BLOCK_SLAB,       consumer);
     GRAVEL_SLAB            = blockItem("gravel_slab",            ModBlocks.GRAVEL_SLAB,            consumer);
     SAND_SLAB              = blockItem("sand_slab",              ModBlocks.SAND_SLAB,              consumer);
     RED_SAND_SLAB          = blockItem("red_sand_slab",          ModBlocks.RED_SAND_SLAB,          consumer);
