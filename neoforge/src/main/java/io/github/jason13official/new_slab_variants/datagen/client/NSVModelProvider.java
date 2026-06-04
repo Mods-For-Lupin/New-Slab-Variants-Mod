@@ -490,24 +490,24 @@ public class NSVModelProvider extends ModelProvider {
     cubeSlab(bg, ModBlocks.BLACK_CONCRETE_POWDER_SLAB,      Blocks.BLACK_CONCRETE_POWDER);
 
     // Glass/stained glass
-    cubeSlab(bg, ModBlocks.GLASS_SLAB,                    Blocks.GLASS);
-    cubeSlab(bg, ModBlocks.TINTED_GLASS_SLAB,             Blocks.TINTED_GLASS);
-    cubeSlab(bg, ModBlocks.WHITE_STAINED_GLASS_SLAB,      Blocks.WHITE_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.ORANGE_STAINED_GLASS_SLAB,     Blocks.ORANGE_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.MAGENTA_STAINED_GLASS_SLAB,    Blocks.MAGENTA_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.LIGHT_BLUE_STAINED_GLASS_SLAB, Blocks.LIGHT_BLUE_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.YELLOW_STAINED_GLASS_SLAB,     Blocks.YELLOW_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.LIME_STAINED_GLASS_SLAB,       Blocks.LIME_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.PINK_STAINED_GLASS_SLAB,       Blocks.PINK_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.GRAY_STAINED_GLASS_SLAB,       Blocks.GRAY_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.LIGHT_GRAY_STAINED_GLASS_SLAB, Blocks.LIGHT_GRAY_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.CYAN_STAINED_GLASS_SLAB,       Blocks.CYAN_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.PURPLE_STAINED_GLASS_SLAB,     Blocks.PURPLE_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.BLUE_STAINED_GLASS_SLAB,       Blocks.BLUE_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.BROWN_STAINED_GLASS_SLAB,      Blocks.BROWN_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.GREEN_STAINED_GLASS_SLAB,      Blocks.GREEN_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.RED_STAINED_GLASS_SLAB,        Blocks.RED_STAINED_GLASS);
-    cubeSlab(bg, ModBlocks.BLACK_STAINED_GLASS_SLAB,      Blocks.BLACK_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.GLASS_SLAB,                    Blocks.GLASS);
+    glassSlab(bg, ModBlocks.TINTED_GLASS_SLAB,             Blocks.TINTED_GLASS);
+    glassSlab(bg, ModBlocks.WHITE_STAINED_GLASS_SLAB,      Blocks.WHITE_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.ORANGE_STAINED_GLASS_SLAB,     Blocks.ORANGE_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.MAGENTA_STAINED_GLASS_SLAB,    Blocks.MAGENTA_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.LIGHT_BLUE_STAINED_GLASS_SLAB, Blocks.LIGHT_BLUE_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.YELLOW_STAINED_GLASS_SLAB,     Blocks.YELLOW_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.LIME_STAINED_GLASS_SLAB,       Blocks.LIME_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.PINK_STAINED_GLASS_SLAB,       Blocks.PINK_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.GRAY_STAINED_GLASS_SLAB,       Blocks.GRAY_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.LIGHT_GRAY_STAINED_GLASS_SLAB, Blocks.LIGHT_GRAY_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.CYAN_STAINED_GLASS_SLAB,       Blocks.CYAN_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.PURPLE_STAINED_GLASS_SLAB,     Blocks.PURPLE_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.BLUE_STAINED_GLASS_SLAB,       Blocks.BLUE_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.BROWN_STAINED_GLASS_SLAB,      Blocks.BROWN_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.GREEN_STAINED_GLASS_SLAB,      Blocks.GREEN_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.RED_STAINED_GLASS_SLAB,        Blocks.RED_STAINED_GLASS);
+    glassSlab(bg, ModBlocks.BLACK_STAINED_GLASS_SLAB,      Blocks.BLACK_STAINED_GLASS);
 
     // Colored terracotta
     cubeSlab(bg, ModBlocks.WHITE_TERRACOTTA_SLAB,      Blocks.WHITE_TERRACOTTA);
@@ -562,6 +562,17 @@ public class NSVModelProvider extends ModelProvider {
     slabState(bg, slab,
         new TextureMapping().put(TextureSlot.BOTTOM, tex).put(TextureSlot.TOP, tex).put(TextureSlot.SIDE, tex),
         fullModel);
+  }
+
+  private static void glassSlab(BlockModelGenerators bg, Block slab, Block full) {
+    Material t = tex(full);
+    slabState(bg, slab,
+        new TextureMapping()
+            .put(TextureSlot.BOTTOM, t)
+            .put(TextureSlot.TOP, t)
+            .put(TextureSlot.SIDE, t)
+            .forceAllTranslucent(),
+        ModelLocationUtils.getModelLocation(full));
   }
 
   private static void columnSlab(BlockModelGenerators bg, Block slab, Material side, Material top, Block full) {

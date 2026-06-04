@@ -1,6 +1,7 @@
 package io.github.jason13official.new_slab_variants.impl.common.registry;
 
 import io.github.jason13official.new_slab_variants.NewSlabVariants;
+import io.github.jason13official.new_slab_variants.impl.common.block.TranslucentSlabBlock;
 import java.util.function.BiConsumer;
 import java.util.function.Function;
 import net.minecraft.core.registries.Registries;
@@ -484,24 +485,24 @@ public class ModBlocks {
     BLACK_CONCRETE_POWDER_SLAB      = slab("black_concrete_powder_slab",      Blocks.BLACK_CONCRETE_POWDER,      consumer);
 
     // Glass / stained glass
-    GLASS_SLAB              = slab("glass_slab",              Blocks.GLASS,              consumer);
-    TINTED_GLASS_SLAB       = slab("tinted_glass_slab",       Blocks.TINTED_GLASS,       consumer);
-    WHITE_STAINED_GLASS_SLAB      = slab("white_stained_glass_slab",      Blocks.WHITE_STAINED_GLASS,      consumer);
-    ORANGE_STAINED_GLASS_SLAB     = slab("orange_stained_glass_slab",     Blocks.ORANGE_STAINED_GLASS,     consumer);
-    MAGENTA_STAINED_GLASS_SLAB    = slab("magenta_stained_glass_slab",    Blocks.MAGENTA_STAINED_GLASS,    consumer);
-    LIGHT_BLUE_STAINED_GLASS_SLAB = slab("light_blue_stained_glass_slab", Blocks.LIGHT_BLUE_STAINED_GLASS, consumer);
-    YELLOW_STAINED_GLASS_SLAB     = slab("yellow_stained_glass_slab",     Blocks.YELLOW_STAINED_GLASS,     consumer);
-    LIME_STAINED_GLASS_SLAB       = slab("lime_stained_glass_slab",       Blocks.LIME_STAINED_GLASS,       consumer);
-    PINK_STAINED_GLASS_SLAB       = slab("pink_stained_glass_slab",       Blocks.PINK_STAINED_GLASS,       consumer);
-    GRAY_STAINED_GLASS_SLAB       = slab("gray_stained_glass_slab",       Blocks.GRAY_STAINED_GLASS,       consumer);
-    LIGHT_GRAY_STAINED_GLASS_SLAB = slab("light_gray_stained_glass_slab", Blocks.LIGHT_GRAY_STAINED_GLASS, consumer);
-    CYAN_STAINED_GLASS_SLAB       = slab("cyan_stained_glass_slab",       Blocks.CYAN_STAINED_GLASS,       consumer);
-    PURPLE_STAINED_GLASS_SLAB     = slab("purple_stained_glass_slab",     Blocks.PURPLE_STAINED_GLASS,     consumer);
-    BLUE_STAINED_GLASS_SLAB       = slab("blue_stained_glass_slab",       Blocks.BLUE_STAINED_GLASS,       consumer);
-    BROWN_STAINED_GLASS_SLAB      = slab("brown_stained_glass_slab",      Blocks.BROWN_STAINED_GLASS,      consumer);
-    GREEN_STAINED_GLASS_SLAB      = slab("green_stained_glass_slab",      Blocks.GREEN_STAINED_GLASS,      consumer);
-    RED_STAINED_GLASS_SLAB        = slab("red_stained_glass_slab",        Blocks.RED_STAINED_GLASS,        consumer);
-    BLACK_STAINED_GLASS_SLAB      = slab("black_stained_glass_slab",      Blocks.BLACK_STAINED_GLASS,      consumer);
+    GLASS_SLAB              = glassSlab("glass_slab",              Blocks.GLASS,              consumer);
+    TINTED_GLASS_SLAB       = glassSlab("tinted_glass_slab",       Blocks.TINTED_GLASS,       consumer);
+    WHITE_STAINED_GLASS_SLAB      = glassSlab("white_stained_glass_slab",      Blocks.WHITE_STAINED_GLASS,      consumer);
+    ORANGE_STAINED_GLASS_SLAB     = glassSlab("orange_stained_glass_slab",     Blocks.ORANGE_STAINED_GLASS,     consumer);
+    MAGENTA_STAINED_GLASS_SLAB    = glassSlab("magenta_stained_glass_slab",    Blocks.MAGENTA_STAINED_GLASS,    consumer);
+    LIGHT_BLUE_STAINED_GLASS_SLAB = glassSlab("light_blue_stained_glass_slab", Blocks.LIGHT_BLUE_STAINED_GLASS, consumer);
+    YELLOW_STAINED_GLASS_SLAB     = glassSlab("yellow_stained_glass_slab",     Blocks.YELLOW_STAINED_GLASS,     consumer);
+    LIME_STAINED_GLASS_SLAB       = glassSlab("lime_stained_glass_slab",       Blocks.LIME_STAINED_GLASS,       consumer);
+    PINK_STAINED_GLASS_SLAB       = glassSlab("pink_stained_glass_slab",       Blocks.PINK_STAINED_GLASS,       consumer);
+    GRAY_STAINED_GLASS_SLAB       = glassSlab("gray_stained_glass_slab",       Blocks.GRAY_STAINED_GLASS,       consumer);
+    LIGHT_GRAY_STAINED_GLASS_SLAB = glassSlab("light_gray_stained_glass_slab", Blocks.LIGHT_GRAY_STAINED_GLASS, consumer);
+    CYAN_STAINED_GLASS_SLAB       = glassSlab("cyan_stained_glass_slab",       Blocks.CYAN_STAINED_GLASS,       consumer);
+    PURPLE_STAINED_GLASS_SLAB     = glassSlab("purple_stained_glass_slab",     Blocks.PURPLE_STAINED_GLASS,     consumer);
+    BLUE_STAINED_GLASS_SLAB       = glassSlab("blue_stained_glass_slab",       Blocks.BLUE_STAINED_GLASS,       consumer);
+    BROWN_STAINED_GLASS_SLAB      = glassSlab("brown_stained_glass_slab",      Blocks.BROWN_STAINED_GLASS,      consumer);
+    GREEN_STAINED_GLASS_SLAB      = glassSlab("green_stained_glass_slab",      Blocks.GREEN_STAINED_GLASS,      consumer);
+    RED_STAINED_GLASS_SLAB        = glassSlab("red_stained_glass_slab",        Blocks.RED_STAINED_GLASS,        consumer);
+    BLACK_STAINED_GLASS_SLAB      = glassSlab("black_stained_glass_slab",      Blocks.BLACK_STAINED_GLASS,      consumer);
 
     // Colored terracotta
     WHITE_TERRACOTTA_SLAB      = slab("white_terracotta_slab",      Blocks.WHITE_TERRACOTTA,      consumer);
@@ -554,6 +555,11 @@ public class ModBlocks {
   @SuppressWarnings("deprecation")
   private static Block slab(String name, Block source, BiConsumer<Block, Identifier> consumer) {
     return construct(name, SlabBlock::new, BlockBehaviour.Properties.ofLegacyCopy(source), consumer);
+  }
+
+  @SuppressWarnings("deprecation")
+  private static Block glassSlab(String name, Block source, BiConsumer<Block, Identifier> consumer) {
+    return construct(name, TranslucentSlabBlock::new, BlockBehaviour.Properties.ofLegacyCopy(source), consumer);
   }
 
   private static Block construct(String name, Function<Properties, Block> constructor, Properties properties, BiConsumer<Block, Identifier> consumer) {
